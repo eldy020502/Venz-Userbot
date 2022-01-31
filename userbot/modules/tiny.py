@@ -12,9 +12,9 @@ from userbot import CMD_HELP, bot
 async def _(event):
     reply = await event.get_reply_message()
     if not (reply and (reply.media)):
-        await event.edit("`Mohon Balas Ke Sticker`")
+        await event.edit("`Reply dulu ke stiker ANJG`")
         return
-    xx = await event.edit("`Memproses Tiny....`")
+    xx = await event.edit("`Memproses Pengcilan Kontol....`")
     ik = await bot.download_media(reply)
     im1 = Image.open("resources/sky_blank.png")
     if ik.endswith(".tgs"):
