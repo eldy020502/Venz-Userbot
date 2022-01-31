@@ -10,19 +10,19 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 @register(outgoing=True, pattern='^.d(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**BACOT NGENTOTTT!!BAPA LU SURUH RIBUT SAMA GUA**")
+    await typew.edit("**HALAH BACOT BET LU YATIM,LAMA LAMA GW GIVEAWAY BAPAK BUAT LU KNTOL**")
 
 
 @register(outgoing=True, pattern='^.e(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**GAK USAH SOK KERAS GOBLOK!!KENCING MASIH BERDIRI AJA BELAGU**")
+    await typew.edit("**GAUSAH BELAGU YA TOLOL,LAMA LAMA GW SUMPALIN MULUT LU PAKE MANI**")
 
 
 @register(outgoing=True, pattern='^.f(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**MUKA LU SEMUA KAYA KONTOL HAHAHAHA!!**")
+    await typew.edit("**MUKA LU SEMUA KAYA KONCOL HAHAHAHA!!**")
 
 
 @register(outgoing=True, pattern='^.i(?: |$)(.*)')
@@ -34,7 +34,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.r(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**KONTOL KONTOL APA YANG BESAR?KONTOL LU LAH HAHAHAHA!!**")
+    await typew.edit("**KONTOL KONTOL APA YANG BESAR?KONTOL LU LAH HAHAHAHA!!CANDA AOWKAWO KONTOL LU KEA BIJI KENARI**")
 
 
 @register(outgoing=True, pattern='^.t(?: |$)(.*)')
