@@ -1,7 +1,7 @@
 {
-  "name": "Kyy-Userbot",
+  "name": "Venz-Userbot",
   "description": "USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
-  "logo": "https://telegra.ph/file/276d22aac9f400898cd27.jpg",
+  "logo": "https://telegra.ph/file/e43056fdbf77c034618aa.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/muhammadrizky16/Kyy-Userbot/Kyy-Userbot",
-  "telegram": "https://t.me/IDnyaKosong",
-  "success_url": "https://t.me/NastyProject",
+  "repository": "https://github.com/eldy020502/Venz-Userbot/Venz-Userbot",
+  "telegram": "https://t.me/vnotv",
+  "success_url": "https://t.me/venzproject",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -24,7 +24,7 @@
     },
     "ALIVE_LOGO": {
       "description": "Gambar dalam module .alive",
-      "value": "https://telegra.ph/file/276d22aac9f400898cd27.jpg",
+      "value": "https://telegra.ph/file/e43056fdbf77c034618aa.jpg",
       "required": false
     },
      "STRING_SESSION": {
