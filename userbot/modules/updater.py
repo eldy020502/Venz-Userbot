@@ -57,7 +57,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 "`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `"
-                " untuk dapat deploy perubahan terbaru dari ✨ҡʏʏ-υѕєявσт✨.`"
+                " untuk dapat deploy perubahan terbaru dari 👉👌Venz-UserBot👉👌.`"
             )
             repo.__del__()
             return
@@ -67,11 +67,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Kyy-Project dyno.`"
+                f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Venz-Project dyno.`"
             )
             return repo.__del__()
         await event.edit(
-            "`Heroku :` `Sedang MengUpdate`" "\n`Mohon Menunggu 5-7 Menit`"
+            "`Heroku :` `Sedang MengUpdate`" "\n`Mohon Sabar 5-7 Menit,Sabar Ya Ngntd`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -97,14 +97,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             return await event.delete()
         else:
             await event.edit(
-                "`Kyy-Userbot Berhasil DiUpdate🛃,Restart Tunggu Sebentar`"
+                "`Venz-Userbot Berhasil DiUpdate🛃,Restart Tunggu Sebentar`"
             )
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
-                BOTLOG_CHATID, "#BOT \n" "`Kyy-Userbot Berhasil Di Update`"
+                BOTLOG_CHATID, "#BOT \n" "`👉👌Venz-Userbot👉👌 Berhasil Di Update`"
             )
 
     else:
@@ -122,9 +122,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit("**✨ҡʏʏ-υѕєявσт✨** `Berhasil Di Update!`")
+    await event.edit("**👉👌Venz-UserBot👉👌** `Berhasil Di Update!`")
     await asyncio.sleep(1)
-    await event.edit("**✨ҡʏʏ-υѕєявσт✨** `Di Restart....`")
+    await event.edit("**👉👌Venz-UserBot👉👌** `Di Restart....`")
     await asyncio.sleep(1)
     await event.edit("`Mohon Menunggu Beberapa Detik.`")
     await asyncio.sleep(10)
@@ -132,7 +132,7 @@ async def update(event, repo, ups_rem, ac_br):
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#BOT \n" "**✨ҡʏʏ-υѕєявσт✨ Telah Di Perbarui.**"
+            BOTLOG_CHATID, "#BOT \n" "**👉👌Venz-UserBot 👉👌 Telah Di Perbarui.**"
         )
         await asyncio.sleep(100)
         await event.delete()
@@ -196,7 +196,7 @@ async def upstream(event):
 
     if changelog == "" and force_update is False:
         await event.edit(
-            f"\n✨ҡʏʏ-υѕєявσт✨ Sudah Versi Terbaru || Tunggu Update Terbaru\n"
+            f"\n👉👌Venz-UserBot👉👌 Sudah Versi Terbaru || Tunggu Update Terbaru\n"
         )
         await asyncio.sleep(15)
         await event.delete()
@@ -204,7 +204,7 @@ async def upstream(event):
 
     if conf is None and force_update is False:
         changelog_str = (
-            f"**Pembaruan Untuk ✨ҡʏʏ-υѕєявσт✨ :\n\n⚒️ Pembaruan Data :**\n`{changelog}`"
+            f"**Pembaruan Untuk 👉👌Venz-UserBot👉👌 :\n\n⚒️ Pembaruan Data :**\n`{changelog}`"
         )
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
@@ -228,13 +228,13 @@ async def upstream(event):
             "`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`"
         )
     else:
-        await event.edit("` Proses Update ✨ҡʏʏ-υѕєявσт✨, Loading....1%`")
-        await event.edit("` Proses Update ✨ҡʏʏ-υѕєявσт✨ Loading....20%`")
-        await event.edit("` Proses Update ✨ҡʏʏ-υѕєявσт✨, Loading....35%`")
-        await event.edit("` Proses Update ✨ҡʏʏ-υѕєявσт✨, Loading....77%`")
-        await event.edit("` Proses Update ✨ҡʏʏ-υѕєявσт✨, Updating...90%`")
+        await event.edit("` Proses Update 👉👌Venz-UserBot👉👌, Loading....1%`")
+        await event.edit("` Proses Update 👉👌Venz-UserBot👉👌,Loading....20%`")
+        await event.edit("` Proses Update 👉👌Venz-UserBot👉👌, Loading....35%`")
+        await event.edit("` Proses Update 👉👌Venz-UserBot👉👌, Loading....77%`")
+        await event.edit("` Proses Update 👉👌Venz-UserBot👉👌, Updating...90%`")
         await event.edit(
-            "` Proses Update ✨ҡʏʏ-υѕєявσт✨, Mohon Tunggu Sebentar....100%`"
+            "` Proses Update 👉👌Venz-UserBot 👉👌, Mohon Tunggu Sebentar....100%`"
         )
 
     if conf == "now":
@@ -251,10 +251,10 @@ async def upstream(event):
 CMD_HELP.update(
     {
         "update": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update`"
-        "\n• : Untuk Melihat Pembaruan Terbaru Kyy-Userbot."
+        "\n• : Untuk Melihat Pembaruan Terbaru Venz-Userbot."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update now`"
-        "\n• : Memperbarui Kyy-Userbot."
+        "\n• : Memperbarui Venz-Userbot."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update deploy`"
-        "\n• : Memperbarui Kyy-Userbot Dengan Cara Men-Deploy Ulang."
+        "\n• : Memperbarui Venz-Userbot Dengan Cara Men-Deploy Ulang."
     }
 )
