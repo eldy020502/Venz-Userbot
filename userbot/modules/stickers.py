@@ -24,8 +24,8 @@ from userbot.events import register
 
 
 KANGING_STR = [
-    "Sedang Mengambil Sticker Ini Ke Pack Anda",
-    "Sedang Mengambil Sticker Ini Ke Pack Anda",
+    "Sedang Mencyulick Sticker Ini Ke Pack Kamohh",
+    "Sedang Mencyulick Sticker Ini Ke Pack Kamohh",
 ]
 
 
@@ -54,7 +54,7 @@ async def kang(args):
                 in message.media.document.attributes
             ):
                 emoji = message.media.document.attributes[1].alt
-                if emoji != "🔰":
+                if emoji != "⚡":
                     emojibypass = True
         elif "tgsticker" in message.media.document.mime_type:
             await args.edit(f"`{random.choice(KANGING_STR)}`")
@@ -76,7 +76,7 @@ async def kang(args):
     if photo:
         splat = args.text.split()
         if not emojibypass:
-            emoji = "🔰"
+            emoji = "⚡"
         pack = 1
         if len(splat) == 3:
             pack = splat[2]  # User sent both
@@ -173,8 +173,8 @@ async def kang(args):
                         # Ensure user doesn't get spamming notifications
                         await bot.send_read_acknowledge(conv.chat_id)
                         return await args.edit(
-                            "`Sticker telah dibuat ke pack baru !"
-                            "\nIni Pack Yang Baru Saja Anda Buat !"
+                            "`Si Kontol Dah Dibuatkan Sticker Pack Baru,Makasih Kek !"
+                            "\nNih Pack Nya Tekan Dibawah,Jangan DiTetek !"
                             f"\nTekan [✨Klik Disini✨](t.me/addstickers/{packname}) Untuk Melihat Sticker Anda",
                             parse_mode="md",
                         )
