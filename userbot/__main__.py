@@ -27,7 +27,7 @@ for module_name in ALL_MODULES:
 
 # bot.loop.run_until_complete(checking())
 LOGS.info(
-    f"✨Kyy-Userbot✨ ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
+    f"👉👌Venz-Userbot👉👌 ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
