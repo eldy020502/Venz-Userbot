@@ -314,9 +314,9 @@ async def redis(alive):
         f"┣  `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
         f"┣  `Bot Ver  :` {BOT_VER} \n"
         f"┣  `Modules  :` {len(modules)} Modules \n"
-        f"┣  `GitHub   :` [Kyy](https://github.com/muhammadrizky16/Kyy-Userbot) \n"
-        f"┣  `Support  :` [Groups](https://t.me/NastySupportt) \n"
-        f"┣  `Owner    :` [Kyy](https://t.me/IDnyaKosong) \n"
+        f"┣  `GitHub   :` [V-ex](https://github.com/eldy020502/Venz-Userbot) \n"
+        f"┣  `Support  :` [Groups](https://t.me/Justvenzzz) \n"
+        f"┣  `Owner    :` [V-ex](https://t.me/vnotv) \n"
         f"┗━━━━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
         try:
