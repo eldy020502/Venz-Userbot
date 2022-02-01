@@ -32,7 +32,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 
 <p align="center">
 <a href="https://dashboard.heroku.com/new?template=https://github.com/eldy020502/template-venz-userbot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>  
-<a href="https://telegram.dog/XTZ_HerokuBot?start=ZWxkeTAyMDUwMi9WZW56LVVzZXJib3QgbWFpbg"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a>  </p>
+<a href="https://telegram.dog/XTZ_HerokuBot?start=ZWxkeTAyMDUwMi92ZW56LVVzZXJib3QgbWFpbg"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a>  </p>
 
 
 ### Support & Updates j
