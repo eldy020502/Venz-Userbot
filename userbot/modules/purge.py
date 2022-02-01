@@ -40,7 +40,7 @@ async def fastpurger(purg):
     if BOTLOG:
         await purg.client.send_message(
             BOTLOG_CHATID,
-            "Berhasil Menghapus Pesan " + str(count) + " Pesan Berhasil  Dibersihkan.")
+            "Berhasil Menghapus Aib " + str(count) + " Aib Berhasil  Dibersihkan.")
     """
     await sleep(2)
     await done.delete()
@@ -60,13 +60,13 @@ async def purgeme(delme):
 
     smsg = await delme.client.send_message(
         delme.chat_id,
-        "`Berhasil Menghapus Pesan,` " + str(count) + " `Pesan Telah Dihapus ✨`",
+        "`Berhasil Menghapus Aib,` " + str(count) + " `Aib Telah Dihapus ✨`",
     )
     """
     if BOTLOG:
         await delme.client.send_message(
             BOTLOG_CHATID,
-            "`Telah Menghapus Pesan,` " + str(count) + " Pesan Telah Dihapus ✨`")
+            "`Telah Menghapus Aib,` " + str(count) + " Aib Telah Dihapus ✨`")
     """
     await sleep(2)
     i = 1
@@ -84,14 +84,14 @@ async def delete_it(delme):
             """
             if BOTLOG:
                 await delme.client.send_message(
-                    BOTLOG_CHATID, "`Berhasil Menghapus Pesan ✨`")
+                    BOTLOG_CHATID, "`Berhasil Menghapus Aib ✨`")
             """
         except rpcbaseerrors.BadRequestError:
-            await delme.edit("`Tidak Bisa Menghapus Pesan`")
+            await delme.edit("`Tidak Bisa Menghapus Aib`")
             """
             if BOTLOG:
                 await delme.client.send_message(
-                    BOTLOG_CHATID, "`Tidak Bisa Menghapus Pesan`")
+                    BOTLOG_CHATID, "`Tidak Bisa Menghapus Aib`")
             """
 
 
@@ -111,7 +111,7 @@ async def editer(edit):
     """
     if BOTLOG:
         await edit.client.send_message(BOTLOG_CHATID,
-                                       "`Berhasil Mengedit Pesan ツ`")
+                                       "`Berhasil Mengedit Aib ツ`")
    """
 
 
