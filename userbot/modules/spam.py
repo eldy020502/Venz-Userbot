@@ -20,7 +20,7 @@ async def tmeme(e):
     if BOTLOG:
         await e.client.send_message(
             BOTLOG_CHATID, "#CSPAM\n"
-            "TSpam was executed successfully")
+            "TSpam BERHASIL NGENTOD")
 
 
 @register(outgoing=True, pattern="^.wspam (.*)")
@@ -33,7 +33,7 @@ async def tmeme(e):
     if BOTLOG:
         await e.client.send_message(
             BOTLOG_CHATID, "#WSPAM\n"
-            "WSpam was executed successfully")
+            "WSpam BERHASIL NIH TAI")
 
 
 @register(outgoing=True, pattern="^.spam (.*)")
@@ -44,7 +44,7 @@ async def spammer(e):
     await asyncio.wait([e.respond(spam_message) for i in range(counter)])
     if BOTLOG:
         await e.client.send_message(BOTLOG_CHATID, "#SPAM\n"
-                                    "Spam was executed successfully")
+                                    "Spam BERHASIL YA TOD,JANGAN SPAM MULU TAR DELAY")
 
 
 @register(outgoing=True, pattern="^.picspam")
@@ -59,7 +59,7 @@ async def tiny_pic_spam(e):
     if BOTLOG:
         await e.client.send_message(
             BOTLOG_CHATID, "#PICSPAM\n"
-            "PicSpam was executed successfully")
+            "PicSpam BERHASIL,JANGAN SPAM FOTO BOKEP LU")
 
 
 @register(outgoing=True, pattern="^.delayspam (.*)")
