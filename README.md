@@ -35,7 +35,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 <a href="https://telegram.dog/XTZ_HerokuBot?start=ZWxkeTAyMDUwMi9WZW56LVVzZXJib3QgbWFpbg"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a>  </p>
 
 
-### Support & Updates 
+### Support & Updates j
 <a href="https://t.me/NastySupportt"><img src="https://img.shields.io/badge/Join-Group%20Support-red.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/justvenzzz"><img src="https://img.shields.io/badge/Join-Updates%20Channel-white.svg?style=for-the-badge&logo=Telegram"></a>
 
 ### Follow Me :
