@@ -35,18 +35,18 @@ async def get_chatinfo(event):
         try:
             chat_info = await event.client(GetFullChannelRequest(chat))
         except ChannelInvalidError:
-            await event.reply("`Invalid channel/group`")
+            await event.reply("`Channel/group nya salah tod`")
             return None
         except ChannelPrivateError:
             await event.reply(
-                "`This is a private channel/group or I am banned from there`"
+                "`Channel/Group nya private,atau lu kena banned disana,jadi ga bisa nyulick`"
             )
             return None
         except ChannelPublicGroupNaError:
-            await event.reply("`Channel or supergroup doesn't exist`")
+            await event.reply("`Channel/group nya kaga ada su,yang bener lu`")
             return None
         except (TypeError, ValueError):
-            await event.reply("`Invalid channel/group`")
+            await event.reply("`Channel/Group nya salah tod`")
             return None
     return chat_info
 
@@ -64,7 +64,7 @@ async def get_users(event):
     geezteam = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
-        return await geez.edit("`Sorry, Can add users here`")
+        return await geez.edit("`Sorry,Lu ga bisa nambah kontak disini`")
     s = 0
     f = 0
     error = "None"
@@ -74,20 +74,20 @@ async def get_users(event):
         try:
             if error.startswith("Too"):
                 return await geez.edit(
-                    f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people"
+                    f"**Terminal Selesai Dengan Kesalahan**\n(`Mungkin Mendapat Kesalahan Batas dari telethon Silakan coba lagi Nanti`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people"
                 )
             await event.client(
                 functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
             )
             s = s + 1
             await geez.edit(
-                f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`"
+                f"**Terminal Berjalan...**\n\n• Menculick `{s}` orang \n• Gagal Menculik `{f}` orang\n\n**× Kesalahan Terakhir:** `{error}`"
             )
         except Exception as e:
             error = str(e)
             f = f + 1
     return await geez.edit(
-        f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
+        f"**Terminal Selesai** \n\n• Sukses menculick `{s}` orang \n• Gagal menculick `{f}` orang"
     )
 
 
