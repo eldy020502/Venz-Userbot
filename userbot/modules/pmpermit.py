@@ -39,7 +39,7 @@ LASTMSG = {}
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 CUSTOM_TEXT = str(
-    PMPERMIT_TEXT) if PMPERMIT_TEXT else f"__Halo kawan, saya bot yang menjaga room chat Kyy-Userbot {DEFAULTUSER} di mohon jangan melakukan spam , kalau anda melakukan itu OTOMATIS saya akan memblockir anda!__ \n"
+    PMPERMIT_TEXT) if PMPERMIT_TEXT else f"__Halo kawan, saya bot yang menjaga room chat Venz-UserBot {DEFAULTUSER} di mohon jangan melakukan spam , kalau anda melakukan itu OTOMATIS saya akan memblockir anda!__ \n"
 DEF_UNAPPROVED_MSG = (
     "╔═════════════════════╗\n"
     "“𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐓𝐡𝐞 𝐏𝐫𝐢𝐯𝐚𝐜𝐲 𝐌𝐞𝐬𝐬𝐚𝐠𝐞”    ”\n"
@@ -48,7 +48,7 @@ DEF_UNAPPROVED_MSG = (
     f"**ᴋᴀʀᴇɴᴀ sᴀʏᴀ ᴀᴋᴀɴ ᴏᴛᴏᴍᴀᴛɪs ᴍᴇᴍʙʟᴏᴋɪʀ ᴋᴀᴍᴜ, ᴛᴜɴɢɢᴜ sᴀᴍᴘᴀɪ {DEFAULTUSER} ᴍᴇɴᴇʀɪᴍᴀ ᴘᴇsᴀɴ ᴋᴀᴍᴜ [⚠️]({ALIVE_LOGO})** \n"
     "╔═════════════════════╗\n"
     "│○›Pᴇsᴀɴ Oᴛᴏᴍᴀᴛɪs           \n"
-    f"│○›Bʏ ҡʏʏ-υѕєявσт           \n"
+    f"│○›Bʏ Venz-Userbot           \n"
     "╚═════════════════════╝")
 # =================================================================
 
@@ -107,7 +107,7 @@ async def permitpm(event):
 
             if COUNT_PM[event.chat_id] > 5:
                 await event.respond(
-                    "`Anda Telah Di Blokir Karna Melakukan Spam Pesan`\n"
+                    "`Lu Udah Di Blokir Gara Gara Spam Pesan`\n"
                     f"`Ke Room Chat Ini`"
                 )
 
