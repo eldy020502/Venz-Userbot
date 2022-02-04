@@ -15,7 +15,7 @@ async def _(event):
         await event.client.send_file(event.chat_id, response["url"])
         await event.delete()
     except Exception:
-        await event.edit("**Tidak bisa menemukan video asupan.**")
+        await event.edit("**Tidak bisa menemukan video haram.**")
 
 
 @register(outgoing=True, pattern=r"^\.chika$")
@@ -26,7 +26,7 @@ async def _(event):
         await event.client.send_file(event.chat_id, response["url"])
         await event.delete()
     except Exception:
-        await event.edit("**Tidak bisa menemukan video chikakiku.**")
+        await event.edit("**Tidak bisa menemukan video chika sexy.**")
 
 
 @register(outgoing=True, pattern=r"^\.bocil$")
@@ -38,7 +38,7 @@ async def _(event):
         await event.client.send_file(event.chat_id, response["url"])
         await event.delete()
     except Exception:
-        await event.edit("**Tidak bisa menemukan video bocil.**")
+        await event.edit("**Tidak bisa menemukan video bocil haram.**")
 
 
 CMD_HELP.update(
