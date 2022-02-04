@@ -72,7 +72,7 @@ async def handler(tele):
                                 tele.chat_id, guser.id, view_messages=False
                             )
                             await tele.reply(
-                                f"**Pengguna Gban Telah Bergabung** \n"
+                                f"**Manusia Ini Sudah Digban** \n"
                                 f"**Pengguna**: [{guser.id}](tg://user?id={guser.id})\n"
                                 f"**Aksi**  : `Banned`"
                             )
@@ -89,7 +89,7 @@ async def gben(userbot):
     if not sender.id == me.id:
         dark = await dc.reply("`Ingin Mengaktifkan Perintah Global Banned!`")
     else:
-        dark = await dc.edit("`Memproses Global Banned Pengguna Ini!!`")
+        dark = await dc.edit("`Memproses Global Banned Sukontol Ini!!`")
     me = await userbot.client.get_me()
     await dark.edit(f"`Global Banned Akan Segera Aktif!!!`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
@@ -113,7 +113,7 @@ async def gben(userbot):
     if user:
         if user.id in DEVS:
             return await dark.edit(
-                f"`Anda Tidak Bisa Melakukan Global Banned, Karena dia pembuatku🤪`"
+                f"`Lu Gak Bisa Melakukan Global Banned Tolol, Karena dia pembuatku🖕`"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
@@ -132,7 +132,7 @@ async def gben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await dark.edit(f"`Global Banned Aktif ✅`")
+                await dark.edit(f"`Global Banned Aktif 👉👈`")
             except BaseException:
                 b += 1
     else:
