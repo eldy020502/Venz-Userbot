@@ -14,7 +14,7 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 GCAST_BLACKLIST = [
-    -1001506023826,  # Venz Group
+    -1001506023826,  # VenzGroup
 ]
 
 
