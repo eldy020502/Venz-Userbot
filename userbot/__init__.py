@@ -624,7 +624,7 @@ with bot:
                     f"❁ __Saya Adalah Venz Userbot Yang Digunakan Banyak User Telegram__.\n\n"
                     f"❁ __Saya Dibuat Hanya Untuk Bersenang Senang Ditelegram__.\n\n"
                     f"❁ __Kelebihan Saya Banyak, Saya Mempunyai 1816 Modules__.\n\n"
-                    f"© @IDnyaKosong")
+                    f"© @moonscrsh")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -732,7 +732,7 @@ with bot:
                     f"°__Mengaktifkan Pmpermit Kalian Atau Disebut Pesan Otomatis__.\n\n"
                     f"× `.set pm_msg` [**REPLYCHAT**]\n"
                     f"°__Mengganti Teks Pmpermit Selera Kamu__.\n\n"
-                    f"© @IDnyaKosong")
+                    f"© @moonscrsh")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -762,7 +762,7 @@ with bot:
                     f"°__Mengubah Emoji Inline Yang Ada Dicomand__ `.helpme`\n\n"
                     f"× `.set var INLINE_PIC` [**LINK**]\n"
                     f"°__Mengubah Foto Yang Ada Dicomand__ `.helpme`\n\n"
-                    f"© @vnotv")
+                    f"© @moonscrsh")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -790,7 +790,7 @@ with bot:
                     f"Modules Name **pmbot**\n\n"
                     f"× `.set var START_WELCOME` [**TEKS**] \n"
                     f"°__Kamu Juga Bisa Mengubah Start Welcome Untuk Bot Kamu Yang Ini, Dengan Cara Diatas Dan Kata Kata Bebas__.\n\n"
-                    f"© @vnotv")
+                    f"© @moonscrsh")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -820,7 +820,7 @@ with bot:
                     f"⚒Pembaruan Data :\n"
                     f"`.update deploy`\n"
                     f"`update`\n\n"
-                    f"© @vnotv")
+                    f"© @moonscrsh")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -908,7 +908,7 @@ with bot:
         async def killdabot(event):
             if event.query.user_id == uid:
                 text = (
-                    f"**Restaring Kyy-Userbot**...")
+                    f"**Restaring Venz-Userbot**...")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -965,7 +965,7 @@ with bot:
             else:
                 result = builder.article(
                     " ✨venz-υѕєявσт✨",
-                    text="""°Kyy-Userbot°""",
+                    text="""°Venz-Userbot°""",
                     buttons=[
                         [
                             custom.Button.url(
