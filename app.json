@@ -41,13 +41,11 @@
       "required": true
     },
     "BOTLOG_CHATID": {
-      "description": "Gausah bikin grup bot lagi kak,kalian join aja ke grup log bot venz @yahhhgataulah ,untuk id gausah diubah ya,klo gamau ya bikin grup sendiri dan ubah id nya",
-      "value": "-1001643061465"
+      "description": "Gausah bikin grup bot lagi kak,kalian join aja ke grup log bot venz @yahhhgataulah ,untuk id cek /id aja disana,klo gamau ya bikin grup sendiri dan ubah id nya",
       "required": true
     },
     "G_BAN_LOGGER_GROUP": {
-      "description": "Gausah bikin grup bot lagi kak,kalian join aja ke grup log bot venz @yahhhgataulah ,untuk id gausah diubah ya,klo gamau ya bikin grup sendiri dan ubah id nya",
-      "value": "-1001643061465"
+      "description": "Gausah bikin grup bot lagi kak,kalian join aja ke grup log bot venz @yahhhgataulah ,untuk id cek /id aja disana,klo gamau ya bikin grup sendiri dan ubah id nya",
       "required": true
     },
     "PM_AUTO_BAN": {
