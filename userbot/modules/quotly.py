@@ -9,7 +9,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import edit_delete, edit_or_reply, kyy_cmd
+from userbot.utils import edit_delete, edit_or_reply
 from userbot.utils.misc import create_quotly
 
 from .carbon import all_col
