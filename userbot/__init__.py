@@ -304,6 +304,13 @@ EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✨"
 # °Kyy-Userbot°
 OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/Moonscrsh"
 
+#Picture For VCPLUGIN
+PLAY_PIC = (os.environ.get("PLAY_PIC")
+            or "https://telegra.ph/file/6213d2673486beca02967.png")
+
+QUEUE_PIC = (os.environ.get("QUEUE_PIC")
+             or "https://telegra.ph/file/d6f92c979ad96b2031cba.png")
+
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
@@ -414,9 +421,11 @@ try:
         session=session,
         api_id=API_KEY,
         api_hash=API_HASH,
+        connection=ConnectionTcAbridged
         auto_reconnect=True,
         connection_retries=None,
     )
+    call_py = PyTgCalls(bot)
 except Exception as e:
     print(f"STRING_SESSION - {e}")
     sys.exit()
