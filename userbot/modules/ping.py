@@ -17,11 +17,11 @@ from userbot.events import register
 from userbot.utils import edit_or_reply, kyy_cmd
 
 absen = [
-    "**Hadir ganteng** 🥵",
-    "**Hadir bro** 😎",
-    "**Hadir kak** 😉",
-    "**Hadir bang** 😁",
-    "**Hadir kak maap telat** 🥺",
+    "**Hadir El Ganteng** 🥰",
+    "**Hadir El Manisss** 😘",
+    "**Izin dulu ya mau bucin sama el** 😉",
+    "**Apa sayang** 😍",
+    "**Hadir el kunnn,calon suami ku** 🥺",
 ]
 
 pacar = [
