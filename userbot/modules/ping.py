@@ -66,8 +66,8 @@ async def _(kyy):
 
 
 @register(incoming=True, from_users=1971311438, pattern=r"^.el$")
-async def _(kyy):
-    await kyy.reply(random.choice(pacar))
+async def _(el):
+    await el.reply(random.choice(pacar))
 
 
 @kyy_cmd(pattern="sping$")
