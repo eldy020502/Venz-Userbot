@@ -1,16 +1,14 @@
-# Port By @VckyouuBitch From GeezProjects
-# Copyright © 2021 Geez-Projects
 from telethon.tl.types import (
     ChannelParticipantsKicked,
 )
 
-from userbot.events import register
-from userbot import CMD_HELP
+from userbot.events import edit_or_reply, kyy_cmd
+from userbot import CMD_HELP, CMD_HANDLER as cmd
 
 
-@register(outgoing=True, pattern=r"^\.allunban(?: |$)(.*)", groups_only=True)
+@kyy_cmd(outgoing=True, pattern=r"^\.allunban(?: |$)(.*)", groups_only=True)
 async def _(event):
-    await event.edit("`Sedang Mencari List Banning.`")
+    xx = await edit_or_reply("`Sedang Mencari List Banning.`")
     p = 0
     (await event.get_chat()).title
     async for i in event.client.iter_participants(
