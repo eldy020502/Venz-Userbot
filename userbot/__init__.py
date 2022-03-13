@@ -304,7 +304,7 @@ EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✨"
 # °Kyy-Userbot°
 OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/Moonscrsh"
 
-#Picture For VCPLUGIN
+# Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
             or "https://telegra.ph/file/6213d2673486beca02967.png")
 
