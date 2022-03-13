@@ -7,7 +7,7 @@ from telethon.tl.types import MessageEntityPre
 from telethon.utils import add_surrogate
 from markdown import markdown
 
-from .paste import pastetext
+from paste import pastetext
 
 
 def utc_to_local(utc_datetime):
