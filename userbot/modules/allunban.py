@@ -2,7 +2,7 @@ from telethon.tl.types import (
     ChannelParticipantsKicked,
 )
 
-from userbot.events import edit_or_reply, kyy_cmd
+from userbot.utils import edit_or_reply, kyy_cmd
 from userbot import CMD_HELP
 
 
