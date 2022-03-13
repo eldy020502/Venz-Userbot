@@ -445,6 +445,7 @@ async def checking():
         pass
     try:
         await bot(GetSec(checker2))
+        pass
 
 with bot:
     try:
