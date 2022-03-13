@@ -10,7 +10,7 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
 RUN git clone -b Venz-Userbot https://github.com/eldy020502/Venz-Userbot /home/Venz-Userbot/ \
     && chmod 777 /home/Venz-Userbot \
     && mkdir /home/Venz-Userbot/bin/
-WORKDIR /home/Kyy-Userbot/
+WORKDIR /home/Venz-Userbot/
 COPY ./sample_config.env ./config.env* /home/Venz-Userbot/
 RUN pip install -r requirements.txt
 CMD ["python3", "-m", "userbot"]
