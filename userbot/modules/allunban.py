@@ -3,12 +3,12 @@ from telethon.tl.types import (
 )
 
 from userbot.events import edit_or_reply, kyy_cmd
-from userbot import CMD_HELP, CMD_HANDLER as cmd
+from userbot import CMD_HELP
 
 
 @kyy_cmd(outgoing=True, pattern=r"^\.allunban(?: |$)(.*)", groups_only=True)
 async def _(event):
-    xx = await edit_or_reply("`Sedang Mencari List Banning.`")
+    await edit_or_reply("`Sedang Mencari List Banning.`")
     p = 0
     (await event.get_chat()).title
     async for i in event.client.iter_participants(
