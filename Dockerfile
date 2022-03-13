@@ -13,4 +13,5 @@ RUN git clone -b Venz-Userbot https://github.com/eldy020502/Venz-Userbot /home/V
 WORKDIR /home/Venz-Userbot/
 COPY ./sample_config.env ./config.env* /home/Venz-Userbot/
 RUN pip install -r requirements.txt
+RUN pip install --upgrade pip
 CMD ["python3", "-m", "userbot"]
