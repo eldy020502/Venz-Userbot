@@ -54,6 +54,7 @@
     },
     "BOT_USERNAME": {
       "description": "Isilah username bot kalian tanpa menggunakan @, contoh pornhubbot",
+      "required": true
     }
   },
   "addons": [
