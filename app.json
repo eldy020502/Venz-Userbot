@@ -47,6 +47,13 @@
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
       "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Buatlah sebuah bot di @Botfather, dan salin token botnya dan isi disini",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "Isilah username bot kalian tanpa menggunakan @, contoh pornhubbot",
     }
   },
   "addons": [
