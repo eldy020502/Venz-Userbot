@@ -111,7 +111,7 @@ async def repo_is_here(wannasee):
                         "**Hey**, I am using **✨ venz-userbot✨** \n"
                         "卍━━━━━━━━━━━━━━━━━━━━━━卍\n"
                         "➣ **Repo Userbot :** [ɢɪᴛʜᴜʙ](https://github.com/eldy020502/Venz-Userbot)\n"
-                        "➣ **Owner Bot       :** [ҡʏʏ](t.me/moonscrsh)\n"
+                        "➣ **Owner Bot       :** [v-ex](t.me/moonscrsh)\n"
                         "卍━━━━━━━━━━━━━━━━━━━━━━卍\n"
                         "➣ **Support           :** [sᴜᴘᴘᴏʀᴛ](https://t.me/justvenzzz)\n"
                         "➣ **Channel           :** [ᴄʜᴀɴɴᴇʟ](https://t.me/venzproject)\n"
