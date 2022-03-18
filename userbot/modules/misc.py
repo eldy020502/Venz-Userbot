@@ -108,13 +108,13 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await edit_or_reply(wannasee,
-                        "**Hey**, I am using **✨ҡʏʏ-υѕєявσт✨** \n"
+                        "**Hey**, I am using **✨ venz-userbot✨** \n"
                         "卍━━━━━━━━━━━━━━━━━━━━━━卍\n"
-                        "➣ **Repo Userbot :** [ɢɪᴛʜᴜʙ](https://github.com/muhammadrizky16/Kyy-Userbot)\n"
-                        "➣ **Owner Bot       :** [ҡʏʏ](t.me/IDnyaKosong)\n"
+                        "➣ **Repo Userbot :** [ɢɪᴛʜᴜʙ](https://github.com/eldy020502/Venz-Userbot)\n"
+                        "➣ **Owner Bot       :** [ҡʏʏ](t.me/moonscrsh)\n"
                         "卍━━━━━━━━━━━━━━━━━━━━━━卍\n"
-                        "➣ **Support           :** [sᴜᴘᴘᴏʀᴛ](https://t.me/NastySupportt)\n"
-                        "➣ **Channel           :** [ᴄʜᴀɴɴᴇʟ](https://t.me/NastyProject)\n"
+                        "➣ **Support           :** [sᴜᴘᴘᴏʀᴛ](https://t.me/justvenzzz)\n"
+                        "➣ **Channel           :** [ᴄʜᴀɴɴᴇʟ](https://t.me/venzproject)\n"
                         "卍━━━━━━━━━━━━━━━━━━━━━━卍\n"
                         )
 
@@ -275,13 +275,13 @@ CMD_HELP.update({
     \n↳ : Dapatkan item acak dari daftar item.",
     f"sleep": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}sleep <seconds>`\
     \n↳ : `{cmd}sleep`\
-    \n  •  **Function : Biarkan Kyy-Userbot tidur selama beberapa detik.",
+    \n  •  **Function : Biarkan Venz-Userbot tidur selama beberapa detik.",
     f"shutdown": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}shutdown`\
     \n↳ : Mematikan bot",
     f"repo": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}repo`\
-    \n↳ : Menampilan link Repository Kyy-Userbot.",
+    \n↳ : Menampilan link Repository Venz-Userbot.",
     f"string": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}string`\
-    \n↳: Menampilkan link String Kyy-Userbot",
+    \n↳: Menampilkan link String Venz-Userbot",
     f"readme": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙 `{cmd}readme`\
     \n↳ : Menyediakan tautan untuk mengatur userbot dan modulnya.",
     f"repeat": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}repeat <no> <text>`\
