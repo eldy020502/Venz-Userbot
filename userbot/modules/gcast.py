@@ -15,7 +15,7 @@ from userbot.utils import edit_or_reply, edit_delete, kyy_cmd
 from userbot.events import register
 
 GCAST_BLACKLIST = [
-    -1001506023826,  # Venz Group
+    -1001506023826,  # VenzGroup
     -1001380293847,  # NastySupport
     -1001473548283,  # SharingUserbot
     -1001578091827,  # PrimeSupportGroup
@@ -23,6 +23,7 @@ GCAST_BLACKLIST = [
     -1001430568914,  # FlicksSupport
     -1001267233272,  # PocongUserbot
     -1001386557465,  # RumahKitaro
+    -1001459812644,  # Disuruhrama
     -1001318051930,  # Gatau GC mana
 
 ]
