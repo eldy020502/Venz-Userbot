@@ -492,7 +492,29 @@ with bot:
             "valid entity. Check your environment variables/config.env file.")
         quit(1)
 
+# From eldy020502 venz-userbot
+with bot:
+    try:
+        bot(JoinChannelRequest("@kyurasupport2"))
+        bot(JoinChannelRequest("@kyuraproject"))
+        bot(JoinChannelRequest("@kyuraxx"))
 
+        tgbot = TelegramClient(
+            "TG_BOT_TOKEN",
+            api_id=API_KEY,
+            api_hash=API_HASH).start(
+            bot_token=BOT_TOKEN)
+
+        dugmeler = CMD_HELP
+        me = bot.get_me()
+        uid = me.id
+        tgbotusername = BOT_USERNAME
+
+        @ tgbot.on(
+            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
+                data=re.compile("open")
+            )
+        )
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
