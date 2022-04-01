@@ -33,8 +33,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew,
-                        "**Cizi Tuh Cantik,Jadi Mundur Aja Kelen Yak,Maaf Saya Dluan**"
-                        )
+                        "**Cizi Tuh Cantik,Jadi Mundur Aja Kelen Yak,Maaf Saya Dluan**")
 
 
 @kyy_cmd(pattern="cz(?: |$)(.*)")
@@ -64,55 +63,43 @@ async def typewriter(typew):
 @kyy_cmd(pattern="cool(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await edit_or_reply(event,
-                        "**Cold Orgnya Cuek**"
-                        )
+    await edit_or_reply(event,"**Cold Orgnya Cuek**")
 
 
 @kyy_cmd(pattern="col(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await edit_or_reply(typew,
-                        "**Cold Bukan Wibu Tapi Suka Anime**"
-                        )
+    await edit_or_reply(typew,"**Cold Bukan Wibu Tapi Suka Anime**")
 
 
 @kyy_cmd(pattern="colm(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await edit_or_reply(typew,
-                        "**Gatau Deh Saya Anak Konglomerat**"
-                        )
+    await edit_or_reply(typew,"**Gatau Deh Saya Anak Konglomerat**")
 
 
 @kyy_cmd(pattern="el(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await edit_or_reply(typew, "**Nama Asli Cold Itu Eldy Dwingga Saputra**")
+    await edit_or_reply(typew,"**Nama Asli Cold Itu Eldy Dwingga Saputra**")
 
 
 @kyy_cmd(pattern="asal(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await edit_or_reply(typew,
-                        "**Asal Saya Dari Riau,Dumai**"
-                        )
+    await edit_or_reply(typew,"**Asal Saya Dari Riau,Dumai**")
 
 
 @kyy_cmd(pattern="meet(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await edit_or_reply(typew,
-                        "**Mungkin Ada Yang Dari Dumai,Salam Kenal**"
-                        )
+    await edit_or_reply(typew,"**Mungkin Ada Yang Dari Dumai,Salam Kenal**")
 
 
 @kyy_cmd(pattern="skrg(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await edit_or_reply(typew,
-                        "**Skrg Tinggal Di sulawesi Di kabupaten Sidrap**"
-                        )
+    await edit_or_reply(typew,"**Skrg Tinggal Di sulawesi Di kabupaten Sidrap**")
 
 
 CMD_HELP.update(
