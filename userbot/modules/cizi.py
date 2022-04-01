@@ -32,8 +32,7 @@ async def typewriter(typew):
 @kyy_cmd(pattern="cheeze(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await edit_or_reply(typew,
-                        "**Cizi Tuh Cantik,Jadi Mundur Aja Kelen Yak,Maaf Saya Dluan**")
+    await edit_or_reply(typew, "**Cizi Tuh Cantik,Jadi Mundur Aja Kelen Yak,Maaf Saya Dluan**")
 
 
 @kyy_cmd(pattern="cz(?: |$)(.*)")
@@ -63,7 +62,7 @@ async def typewriter(typew):
 @kyy_cmd(pattern="cool(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await edit_or_reply(event, "**Cold Orgnya Cuek**")
+    await edit_or_reply(typew, "**Cold Orgnya Cuek**")
 
 
 @kyy_cmd(pattern="col(?: |$)(.*)")
