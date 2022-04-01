@@ -26,7 +26,7 @@ from requests import get
 from telethon import Button
 from telethon.sync import TelegramClient, custom, events
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
-from telethon.tl.functions.channels import JoinChannelRequest as GetSec
+from telethon.tl.functions.channels import JoinChannelRequest as GetAh
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.sessions import StringSession
 from telethon.sync import TelegramClient, custom, events
@@ -433,14 +433,14 @@ except Exception as e:
 
 
 async def checking():
-    gocheck = str(pybase64.b64decode("QHZlbnpwcm9qZWN0"))[2:15]
-    checker = str(pybase64.b64decode("QGp1c3R2ZW56eno="))[2:16]
+    gccok = str(pybase64.b64decode("QGp1c3R2ZW56eno="))[2:17]
+    chcok = str(pybase64.b64decode("QHZlbnpwcm9qZWN0"))[2:15]
     try:
-        await bot(GetSec(gocheck))
+        await bot(GetAh(gccok))
     except BaseException:
         pass
     try:
-        await bot(GetSec(checker))
+        await bot(GetAh(chcok))
     except BaseException:
         pass
 
