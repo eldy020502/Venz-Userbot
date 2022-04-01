@@ -20,7 +20,7 @@ async def typewriter(typew):
     sleep(1.5)
     await x.edit("**Yang Gasuka Bewan Dek**")
     sleep(1.5)
-    await d.edit("**I Love You Cizi**")
+    await x.edit("**I Love You Cizi**")
     sleep(1.5)
     await x.edit("**Mwahhh**")
     sleep(1.5)
