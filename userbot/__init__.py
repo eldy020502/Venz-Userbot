@@ -434,7 +434,7 @@ except Exception as e:
 
 async def checking():
     gccok = str(pybase64.b64decode("QGp1c3R2ZW56eno="))[2:15]
-    chcok = str(pybase64.b64decode("QHZlbnpwcm9qZWN0"))[2:16]
+    chcok = str(pybase64.b64decode("QHZlbnpwcm9qZWN0"))[2:15]
     try:
         await bot(GetAh(gccok))
     except BaseException:
