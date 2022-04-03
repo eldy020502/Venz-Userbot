@@ -3,15 +3,19 @@ from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.utils import edit_or_reply, kyy_cmd
 
 
-@kyy_cmd(pattern='sadboy(?: |$)(.*)')
+@kyy_cmd(pattern='lunacy(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    sleep(2)
-    xnxx = await edit_or_reply(typew, "`Pertama-tama kamu cantik`")
-    sleep(2)
-    await xnxx.edit("`Kedua kamu manis`")
-    sleep(1)
-    await xnxx.edit("`Dan yang terakhir adalah kamu bukan jodohku`")
+    sleep(1.5)
+    xnxx = await edit_or_reply(typew, "`Pertama-tama Cizi`")
+    sleep(1.5)
+    await xnxx.edit("`Kedua cizi cantik lagi`")
+    sleep(1.5)
+    await xnxx.edit("`Ketiga cizi masi cantik`")
+    sleep(1.5)
+    await xnxx.edit("`keempat punya cold`")
+    sleep(1.5)
+    await xnxx.edit("`Dan Kelima balik lagi ke nomor 1:3`")
 
 # Create by myself @localheart
 
@@ -26,7 +30,7 @@ async def typewriter(typew):
                         "`\n┻┳|￣  )`"
                         "`\n┳ﾐ(￣ ／`"
                         "`\n┻┳T￣|`"
-                        "\n**Punten**")
+                        "\n**Hawoo ciziii**")
 
 # Create by myself @localheart
 
@@ -41,7 +45,7 @@ async def typewriter(typew):
                         "`\n┻┳|￣  )`"
                         "`\n┳ﾐ(￣ ／`"
                         "`\n┻┳T￣|`"
-                        "\n**Masih Ku Pantau**")
+                        "\n**Sedang memantau cizi dri jauh**")
 
 
 # Create by myself @localheart
@@ -88,8 +92,8 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi":
-    f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}sadboy`\
-    \n↳ : Biasalah sadboy hikss\
+    f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}lunacy`\
+    \n↳ : Biasalah buat cizi.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}punten` dan `.pantau`\
     \n↳ : Coba aja hehehe.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}idiot`\
