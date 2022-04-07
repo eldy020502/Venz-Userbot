@@ -674,7 +674,7 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@VenzUserbot"):
+            if event.query.user_id == uid and query.startswith("@vuserrrbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = await event.builder.photo(
                     file=kyylogo,
