@@ -2,6 +2,7 @@
 # Thanks To @tofik_dn || https://github.com/tofikdn
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
 # t.me/SharingUserbot & t.me/Lunatic0de
+# Thans To @Idnyakosong || https://github.com/muhammadrizky16
 
 from pytgcalls import StreamType
 from pytgcalls.types import Update
