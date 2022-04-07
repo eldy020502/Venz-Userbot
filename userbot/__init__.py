@@ -570,8 +570,8 @@ with bot:
 
         main_help_button = [
             [
-                Button.inline("ᴍᴏᴅᴜʟᴇs 📚", data="reopen"),
-                Button.inline("ᴠᴄ ᴍᴇɴᴜ 📎", data="venz_inline"),
+                Button.inline("ᴍᴏᴅᴜʟᴇs 🛂", data="reopen"),
+                Button.inline("ᴠᴄ ᴍᴇɴᴜ 📲", data="venz_inline"),
             ],
             [
                 Button.url("sᴇᴛᴛɪɴɢs ⚙️", f"t.me/{botusername}"),
