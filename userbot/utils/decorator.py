@@ -55,7 +55,7 @@ def venz_cmd(
         else:
             kyy_ = "\\" + CMD_HANDLER
             sudo_ = "\\" + SUDO_HANDLER
-            kyy_reg = re.compile(venz_ + pattern)
+            re.compile(venz_ + pattern)
             sudo_reg = re.compile(sudo_ + pattern)
             if command is not None:
                 cmd1 = venz_ + command
