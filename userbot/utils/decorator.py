@@ -44,7 +44,7 @@ def venz_cmd(
         args["chats"] = black_list_chats
 
     if pattern is not None:
-        global kyy_reg
+        global venz_reg
         global sudo_reg
         if (
             pattern.startswith(r"\#")
@@ -55,14 +55,14 @@ def venz_cmd(
         else:
             kyy_ = "\\" + CMD_HANDLER
             sudo_ = "\\" + SUDO_HANDLER
-            kyy_reg = re.compile(kyy_ + pattern)
+            kyy_reg = re.compile(venz_ + pattern)
             sudo_reg = re.compile(sudo_ + pattern)
             if command is not None:
-                cmd1 = kyy_ + command
+                cmd1 = venz_ + command
                 cmd2 = sudo_ + command
             else:
                 cmd1 = (
-                    (kyy_ +
+                    (venz_ +
                      pattern).replace(
                         "$",
                         "").replace(
@@ -85,9 +85,9 @@ def venz_cmd(
         if not disable_edited:
             bot.add_event_handler(
                 func, events.MessageEdited(
-                    **args, outgoing=True, pattern=kyy_reg))
+                    **args, outgoing=True, pattern=venz_reg))
         bot.add_event_handler(
-            func, events.NewMessage(**args, outgoing=True, pattern=kyy_reg)
+            func, events.NewMessage(**args, outgoing=True, pattern=venz_reg)
         )
         if allow_sudo:
             if not disable_edited:
