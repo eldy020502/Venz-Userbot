@@ -1,34 +1,34 @@
 from platform import uname
 from userbot import ALIVE_NAME, CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import venz_cmd
 
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
 
 
-@kyy_cmd(pattern="p(?: |$)(.*)")
+@venz_cmd(pattern="p(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ`")
 # Salam
 
 
-@kyy_cmd(pattern="l(?: |$)(.*)")
+@venz_cmd(pattern="l(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`وَعَلَيْكُمْ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ`")
 # Menjawab Salam
 
 
-@kyy_cmd(pattern="istigfar(?: |$)(.*)")
+@venz_cmd(pattern="istigfar(?: |$)(.*)")
 async def perkenalan(event):
     event.pattern_match.group(1)
     await event.edit("`اَسْتَغْفِرُاللهَ الْعَظِيْم`")
 # Istigfar
 
 
-@kyy_cmd(pattern="perkenalan(?: |$)(.*)")
+@venz_cmd(pattern="perkenalan(?: |$)(.*)")
 async def perkenalan(event):
     event.pattern_match.group(1)
     await event.edit(f"`Hai Guys , Perkenalkan Nama Gw {DEFAULTUSER}`")
