@@ -1,9 +1,9 @@
 from time import sleep
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import edit_or_reply, kyy_cmd
+from userbot.utils import edit_or_reply, venz_cmd
 
 
-@kyy_cmd(pattern='lunacy(?: |$)(.*)')
+@venz_cmd(pattern='lunacy(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1.5)
@@ -20,7 +20,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@kyy_cmd(pattern='punten(?: |$)(.*)')
+@venz_cmd(pattern='punten(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "`\n┻┳|―-∩`"
@@ -35,7 +35,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@kyy_cmd(pattern='pantau(?: |$)(.*)')
+@venz_cmd(pattern='pantau(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "`\n┻┳|―-∩`"
@@ -51,7 +51,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@kyy_cmd(pattern='idiot(?: |$)(.*)')
+@venz_cmd(pattern='idiot(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "\n╭╮╱╱╭╮"
