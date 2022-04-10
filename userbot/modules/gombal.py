@@ -21,12 +21,11 @@ async def _(event):
         '[terima dudul ya😻](https://telegra.ph/file/afcc3f52fbb59e4cab069.jpg)',
     ]
     for i in animation_ttl:
-        
+
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 8], link_preview=True)
 
 CMD_HELP.update(
-    {
-        \n\n    **Perintah :** `{cmd}dudul`\
-        \n⌬    **Fungsi : **dudul mau tembak kamu"
-    })
+    {n\n ** Perintah: ** `{cmd}dudul`
+     \n⌬ ** Fungsi: **dudul mau tembak kamu"
+     })
