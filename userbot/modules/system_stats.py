@@ -18,7 +18,7 @@ import sys
 import time
 from datetime import datetime
 import psutil
-from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, venz_TEKS_KUSTOM, StartTime, UPSTREAM_REPO_BRANCH, bot, CMD_HANDLER as cmd
+from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, VENZ_TEKS_KUSTOM, StartTime, UPSTREAM_REPO_BRANCH, bot, CMD_HANDLER as cmd
 from userbot.utils import edit_or_reply, venz_cmd
 
 
@@ -229,7 +229,7 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f" **✨venz-userbot✨** \n\n"
-        f"\n__**{venz_TEKS_KUSTOM}**__\n\n\n"
+        f"\n__**{VENZ_TEKS_KUSTOM}**__\n\n\n"
         f"╭✠╼━━━━━━━━━━━━━━━✠╮\n"
         f"◙ `Name       :` {DEFAULTUSER} \n"
         f"◙ `Username   :` @{user.username} \n"
