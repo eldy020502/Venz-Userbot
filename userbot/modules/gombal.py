@@ -26,6 +26,8 @@ async def _(event):
         await event.edit(animation_chars[i % 8], link_preview=True)
 
 CMD_HELP.update(
-    {n\n ** Perintah: ** `{cmd}dudul`
-     \n⌬ ** Fungsi: **dudul mau tembak kamu"
-     })
+    {
+        "gombal": f"**Plugin : **`gombal`\
+        \n\n    **Perintah :** `{cmd}dudul`\
+        \n⌬    **Fungsi : **dudul nembak kamu."
+    })
