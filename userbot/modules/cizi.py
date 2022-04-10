@@ -1,9 +1,9 @@
 from time import sleep
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import edit_or_reply, kyy_cmd
+from userbot.utils import edit_or_reply, venz_cmd
 
 
-@kyy_cmd(pattern="cizi(?: |$)(.*)")
+@venz_cmd(pattern="cizi(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     x = await edit_or_reply(typew, "**Halo Cizi**")
@@ -29,73 +29,73 @@ async def typewriter(typew):
     await x.edit("**>\\<**")
 
 
-@kyy_cmd(pattern="cheeze(?: |$)(.*)")
+@venz_cmd(pattern="cheeze(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "**Cizi Tuh Cantik,Jadi Mundur Aja Kelen Yak,Maaf Saya Dluan**")
 
 
-@kyy_cmd(pattern="cz(?: |$)(.*)")
+@venz_cmd(pattern="cz(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "**Cizi Tuh Pas Lahir Terbuat Dari Gula Aren,Jadi Manis**")
 
 
-@kyy_cmd(pattern="pungut(?: |$)(.*)")
+@venz_cmd(pattern="pungut(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "**Kebetulan Kemarin Cizi Imut Aku Pungut Didunia Kayangan,Pas Liat Kondisinya Terlalu Miris,Jadi Aku Pungut,Saya Gasalah Pungut,Soalnya Dia Spek Bidadari,Yang Terlantar**")
 
 
-@kyy_cmd(pattern="cold(?: |$)(.*)")
+@venz_cmd(pattern="cold(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "**Cold Baik Sudah Merawat Cizi Dengan Memberinya Segala Asupan Vitamin**")
 
 
-@kyy_cmd(pattern="coldy(?: |$)(.*)")
+@venz_cmd(pattern="coldy(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "**Cold Adalah Pejantan Unggul Yang Tidak Suka Digoda,Dan Cold Adalah Si Pria Cuek,Gasuka Dichat Cewe Lain,Kecuali Cizichan**")
 
 
-@kyy_cmd(pattern="cool(?: |$)(.*)")
+@venz_cmd(pattern="cool(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "**Cold Orgnya Cuek**")
 
 
-@kyy_cmd(pattern="col(?: |$)(.*)")
+@venz_cmd(pattern="col(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "**Cold Bukan Wibu Tapi Suka Anime**")
 
 
-@kyy_cmd(pattern="colm(?: |$)(.*)")
+@venz_cmd(pattern="colm(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "**Gatau Deh Saya Anak Konglomerat**")
 
 
-@kyy_cmd(pattern="el(?: |$)(.*)")
+@venz_cmd(pattern="el(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "**Nama Asli Cold Itu Eldy Dwingga Saputra**")
 
 
-@kyy_cmd(pattern="asal(?: |$)(.*)")
+@venz_cmd(pattern="asal(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "**Asal Saya Dari Riau,Dumai**")
 
 
-@kyy_cmd(pattern="meet(?: |$)(.*)")
+@venz_cmd(pattern="meet(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "**Mungkin Ada Yang Dari Dumai,Salam Kenal**")
 
 
-@kyy_cmd(pattern="skrg(?: |$)(.*)")
+@venz_cmd(pattern="skrg(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await edit_or_reply(typew, "**Skrg Tinggal Di sulawesi Di kabupaten Sidrap**")
