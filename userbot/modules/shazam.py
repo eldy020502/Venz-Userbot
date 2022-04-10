@@ -10,10 +10,10 @@
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import venz_cmd
 
 
-@kyy_cmd(pattern="shazam(?: |$)(.*)")
+@venz_cmd(pattern="shazam(?: |$)(.*)")
 async def _(event):
     "To reverse search music by bot."
     if not event.reply_to_msg_id:
