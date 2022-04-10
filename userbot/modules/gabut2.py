@@ -27,10 +27,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@venz_cmd
-(pattern='semangat(?: |$)(.*)')
-
-
+@venz_cmd(pattern='semangat(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(3)
