@@ -1,10 +1,10 @@
 from userbot import CMD_HELP, CMD_HANDLER as cmd
-from userbot.utils import kyy_cmd
+from userbot.utils import venz_cmd
 
 import asyncio
 
 
-@kyy_cmd(pattern='hack(?: |$)(.*)')
+@venz_cmd(pattern='hack(?: |$)(.*)')
 async def hack(event):
     range(0, 11)
     await event.edit("Installing.")
