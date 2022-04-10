@@ -21,7 +21,7 @@ from userbot import (
 )
 
 
-def kyy_cmd(
+def venz_cmd(
     pattern: str = None,
     allow_sudo: bool = True,
     disable_edited: bool = False,
@@ -112,7 +112,7 @@ def kyy_cmd(
     return decorator
 
 
-def kyy_handler(
+def venz_handler(
     **args,
 ):
     def decorator(func):
