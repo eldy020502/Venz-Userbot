@@ -7,7 +7,7 @@ import os
 import io
 import sys
 from userbot import ALIVE_NAME, BOTLOG, BOTLOG_CHATID, CMD_HELP, UPSTREAM_REPO_URL, bot
-from userbot.utils import edit_or_reply, edit_delete, kyy_cmd
+from userbot.utils import edit_or_reply, edit_delete, venz_cmd
 from userbot.utils import time_formatter
 import urllib
 import requests
@@ -19,7 +19,7 @@ from PIL import Image
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 REPOLINK = str(
-    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/muhammadrizky16/Kyy-Userbot"
+    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/muhammadrizky16/venz-Userbot"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -27,7 +27,7 @@ useragent = 'Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) 
 opener.addheaders = [('User-agent', useragent)]
 
 
-@kyy_cmd(pattern="random")
+@venz_cmd(pattern="random")
 async def randomise(items):
     """ For .random command, get a random item from the list of items. """
     itemo = (items.text[8:]).split()
@@ -41,7 +41,7 @@ async def randomise(items):
                      itemo[index] + "`")
 
 
-@kyy_cmd(pattern="sleep ([0-9]+)$")
+@venz_cmd(pattern="sleep ([0-9]+)$")
 async def sleepybot(time):
     """ For .sleep command, let the userbot snooze for a few second. """
     counter = int(time.pattern_match.group(1))
@@ -56,10 +56,10 @@ async def sleepybot(time):
     await xx.edit("`OK, I'm awake now.`")
 
 
-@kyy_cmd(pattern="shutdown$")
+@venz_cmd(pattern="shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await edit_or_reply(event, "`Mematikan Kyy-Userbot....`")
+    await edit_or_reply(event, "`Mematikan venz-Userbot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -68,9 +68,9 @@ async def killdabot(event):
     await bot.disconnect()
 
 
-@kyy_cmd(pattern="restart$")
+@venz_cmd(pattern="restart$")
 async def killdabot(event):
-    await edit_or_reply(event, "`Restarting Kyy-Userbot...`")
+    await edit_or_reply(event, "`Restarting venz-Userbot...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
@@ -81,16 +81,16 @@ async def killdabot(event):
     execle(sys.executable, *args, environ)
 
 
-@kyy_cmd(pattern="readme$")
+@venz_cmd(pattern="readme$")
 async def reedme(e):
     await edit_or_reply(e,
                         "Here's Something for You to Read :\n"
-                        "\n[✨ Kyy-Userbot Repo](https://github.com/muhammadrizky16/Kyy-Userbot/blob/Kyy-Userbot/README.md)"
+                        "\n[✨ venz-Userbot Repo](https://github.com/muhammadrizky16/venz-Userbot/blob/venz-Userbot/README.md)"
                         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
                         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
 
-@kyy_cmd(pattern="repeat (.*)")
+@venz_cmd(pattern="repeat (.*)")
 async def repeat(rep):
     cnt, txt = rep.pattern_match.group(1).split(' ', 1)
     replyCount = int(cnt)
@@ -104,7 +104,7 @@ async def repeat(rep):
     await rep.edit(replyText)
 
 
-@kyy_cmd(pattern="repo$")
+@venz_cmd(pattern="repo$")
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await edit_or_reply(wannasee,
@@ -119,16 +119,16 @@ async def repo_is_here(wannasee):
                         )
 
 
-@kyy_cmd(pattern="string$")
+@venz_cmd(pattern="string$")
 async def repo_is_here(wannasee):
     """For .repo command, just returns the repo URL."""
     await edit_or_reply(wannasee,
                         f"➣ **GET STRING SESSION VIA REPLIT :** [KLIK DISINI](https://replit.com/@rizkyhmdanii16/StringSession)\n"
-                        f"➣ **GET STRING SESSION VIA BOT    :** [KLIK DISINI](https://t.me/NastyStringbot)\n"
+                        f"➣ **GET STRING SESSION VIA BOT    :** [KLIK DISINI](https://t.me/venzstringbot)\n"
                         )
 
 
-@kyy_cmd(pattern="raw$")
+@venz_cmd(pattern="raw$")
 async def raw(event):
     the_real_message = None
     reply_to_id = None
@@ -152,7 +152,7 @@ async def raw(event):
             caption="`Here's the decoded message data !!`")
 
 
-@kyy_cmd(pattern="reverse(?: |$)(\\d*)")
+@venz_cmd(pattern="reverse(?: |$)(\\d*)")
 async def okgoogle(img):
     """ For .reverse command, Google search images and stickers. """
     if os.path.isfile("okgoogle.png"):
