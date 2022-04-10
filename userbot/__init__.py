@@ -254,7 +254,9 @@ YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY") or "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg"
 
 # Untuk Perintah .venzalive
-VENZ_TEKS_KUSTOM = os.environ.get("VENZ_TEKS_KUSTOM", "I'am Using Venz-Userbot✨")
+VENZ_TEKS_KUSTOM = os.environ.get(
+    "VENZ_TEKS_KUSTOM",
+    "I'am Using Venz-Userbot✨")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
