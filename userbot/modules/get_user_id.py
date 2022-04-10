@@ -1,10 +1,10 @@
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from userbot.utils import edit_or_reply, edit_delete, kyy_cmd
+from userbot.utils import edit_or_reply, edit_delete, venz_cmd
 from userbot import bot, CMD_HELP, CMD_HANDLER as cmd
 
 
-@kyy_cmd(pattern="getid(?: |$)(.*)")
+@venz_cmd(pattern="getid(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
