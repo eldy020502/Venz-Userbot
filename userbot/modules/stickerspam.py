@@ -10,11 +10,11 @@ from telethon.tl import functions, types
 from telethon.tl.functions.messages import GetStickerSetRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from userbot.utils import edit_or_reply, edit_delete, kyy_cmd
+from userbot.utils import edit_or_reply, edit_delete, venz_cmd
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, CMD_HANDLER as cmd
 
 
-@kyy_cmd(pattern="sspam(?: |$)(.*)")
+@venz_cmd(pattern="sspam(?: |$)(.*)")
 async def stickerpack_spam(event):
     if event.fwd_from:
         return
@@ -26,10 +26,10 @@ async def stickerpack_spam(event):
     hmm = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
     try:
         stickerset_attr = reply.document.attributes[1]
-        kyy = await edit_or_reply(event, "`Fetching details of the sticker pack, please wait..`"
+        venz = await edit_or_reply(event, "`Fetching details of the sticker pack, please wait..`"
                                   )
     except BaseException:
-        await kyy.edit("`This is not a sticker. Reply to a sticker.`", 5)
+        await venz.edit("`This is not a sticker. Reply to a sticker.`", 5)
         return
     try:
         get_stickerset = await event.client(
@@ -41,7 +41,7 @@ async def stickerpack_spam(event):
             )
         )
     except Exception:
-        return await kyy.edit("`I guess this sticker is not part of any pack so i cant kang this sticker pack try kang for this sticker`",
+        return await venz.edit("`I guess this sticker is not part of any pack so i cant kang this sticker pack try kang for this sticker`",
                               )
     try:
         hmm = Get(hmm)
