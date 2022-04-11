@@ -1,3 +1,8 @@
+# Credit by @justrex Xa-Userbot | Ultroid
+# Inspired by https://github.com/rexashh/Xa-Userbot
+# And inspired by https://github.com/TeamUltroid/Ultroid
+# klo ambil credit jangan dihapus lah pantek
+
 from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.utils import venz_cmd
 import asyncio
@@ -25,9 +30,34 @@ async def _(event):
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 8], link_preview=True)
 
+
+@venz_cmd(pattern="papku(?: |$)(.*)")
+async def _(event):
+    if event.fwd_from:
+        return
+    animation_interval = 3
+    animation_ttl = range(0, 9)
+    await event.edit('Aku mau ngasih Pap aku buat kamu')
+    animation_chars = [
+        '[Ini aku](https://telegra.ph/file/091024e9bb4729426cc44.jpg)',
+        '[aku ganteng](https://telegra.ph/file/836ec69a83a81b909e106.jpg)',
+        '[Ganteng Banget kan 😻](https://telegra.ph/file/597969f9c0783081e523e.jpg)',
+        '[­Ganteng intinya👩‍❤️‍💋‍👨](https://telegra.ph/file/32fc29f1689be15e20a7d.jpg)',
+        '[Kamu Mau jadi pacarku?😻😍💘](https://telegra.ph/file/0cdcb0452c89a664dcb98.jpg)',
+        '[Mau lagi?](https://telegra.ph/file/10140ec996bfed2b41dc1.jpg)',
+        '[Nihhh](https://telegra.ph/file/ba17968cd0fa477e96dc3.jpg)',
+        '[Terkahir](https://telegra.ph/file/ed6a84a8b1c315183cc35.jpg)',
+    ]
+    for i in animation_ttl:
+
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 8], link_preview=True)
+
 CMD_HELP.update(
     {
         "gombal": f"**Plugin : **`gombal`\
         \n\n    **Perintah :** `{cmd}dudul`\
-        \n⌬    **Fungsi : **dudul nembak kamu."
+        \n⌬    **Fungsi : **dudul nembak kamu.\
+       \n\n    **Perintah :** `{cmd}papku`\
+        \n⌬    **Fungsi : **Bonus awoakwoak."
     })
