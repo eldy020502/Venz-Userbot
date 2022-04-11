@@ -105,11 +105,11 @@ if CONFIG_CHECK:
 
 # DEVS
 DEVS = (
-    1971311438,   #Venz
+    1971311438,  # Venz
     1224143544,  # Rexa
     1663258664,  # kyy
     1784606556,  # grey
-    2046879193,  #Gatau
+    2046879193,  # Gatau
     1416529201,  # tonic
     2130526178,  # Alpha
     1904791338,  # skyzu
@@ -257,7 +257,9 @@ YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY") or "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg"
 
 # Untuk Perintah .venzalive
-VENZ_TEKS_KUSTOM = os.environ.get("VENZ_TEKS_KUSTOM", "ʜᴇʏ, ɪᴍ ᴜsɪɴɢ ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ⌬")
+VENZ_TEKS_KUSTOM = os.environ.get(
+    "VENZ_TEKS_KUSTOM",
+    "ʜᴇʏ, ɪᴍ ᴜsɪɴɢ ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ⌬")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
