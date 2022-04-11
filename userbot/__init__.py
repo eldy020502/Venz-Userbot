@@ -124,7 +124,7 @@ while 0 < 6:
             continue
         kyyblacklist = []
         break
-    venzblacklist = _BLACKLIST.json()
+    kyyblacklist = _BLACKLIST.json()
     break
 
 del _BLACKLIST
