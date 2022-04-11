@@ -103,21 +103,24 @@ if CONFIG_CHECK:
     )
     quit(1)
 
-# KALO NGEFORK/CLONE ID DEVS NYA GA USAH DI HAPUS YA KONTOLLLL 😡
+# DEVS
 DEVS = (
-    1971311438,  # el
-    1663258664,
-    1416529201,
-    2116587637,  # kang deak
-    955903284,
-    2130526178,
-    5106625166,
+    1971311438,   #Venz
+    1224143544,  # Rexa
+    1663258664,  # kyy
+    1784606556,  # grey
+    2046879193,  #Gatau
+    1416529201,  # tonic
+    2130526178,  # Alpha
+    1904791338,  # skyzu
+    1954289347,  # kyura
+    1337194042,  # abin
+    1821140802,  # HIRO
 )
-
 # Blacklist User for use Venz-Userbot
 while 0 < 6:
     _BLACKLIST = get(
-        "https://raw.githubusercontent.com/muhammadrizky/kyyblack/master/kyyblacklist.json"
+        "https://raw.githubusercontent.com/muhammadrizky16/Kyyblack/master/kyyblacklist.json"
     )
     if _BLACKLIST.status_code != 200:
         if 0 != 5:
@@ -156,7 +159,7 @@ PMPERMIT_TEXT = os.environ.get("PMPERMIT_TEXT", None)
 
 # Custom Pmpermit pic
 PMPERMIT_PIC = os.environ.get(
-    "PMPERMIT_PIC") or "https://https://telegra.ph/file/c81e13bb370e59e8f4313.jpg"
+    "PMPERMIT_PIC") or "https://telegra.ph/file/5b24d416c1da20849c7d0.jpg"
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
@@ -254,15 +257,13 @@ YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY") or "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg"
 
 # Untuk Perintah .venzalive
-VENZ_TEKS_KUSTOM = os.environ.get(
-    "VENZ_TEKS_KUSTOM",
-    "I'am Using Venz-Userbot✨")
+VENZ_TEKS_KUSTOM = os.environ.get("VENZ_TEKS_KUSTOM", "ʜᴇʏ, ɪᴍ ᴜsɪɴɢ ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ⌬")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
 
 # Default .alive Name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Venz")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -282,7 +283,7 @@ BITLY_TOKEN = os.environ.get(
 TERM_ALIAS = os.environ.get("TERM_ALIAS", "Venz-Userbot")
 
 # Bot Version
-BOT_VER = os.environ.get("BOT_VER", "3.1.5")
+BOT_VER = os.environ.get("BOT_VER", "8.1")
 
 # Default .alive Username
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
@@ -292,16 +293,19 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/c81e13bb370e59e8f4313.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/5b24d416c1da20849c7d0.jpg"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/c81e13bb370e59e8f4313.jpg"
+    "INLINE_PIC") or "https://telegra.ph/file/5b24d416c1da20849c7d0.jpg"
 
 # Default emoji help
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔥"
 
-DEFAULT = list(map(int, b64decode("MTY2MzI1ODY2NA==").split()))
+# °Venz-Userbot°
+OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/moonscrsh"
+
+DEFAULT = list(map(int, b64decode("MTIyNDE0MzU0NA==").split()))
 
 # Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
@@ -431,9 +435,9 @@ except Exception as e:
 
 
 async def checking():
-    gocheck = str(pybase64.b64decode("QHZlbnpwcm9qZWN0"))[2:15]
-    checker = str(pybase64.b64decode("QGp1c3R2ZW56eno="))[2:16]
-    checker2 = str(pybase64.b64decode("QGhpbXluYW1lX3Y="))[2:16]
+    gocheck = str(pybase64.b64decode("QHJleGFwcml2YXRlcm9vbQ=="))[2:18]
+    checker = str(pybase64.b64decode("QGluaWNoYW5uZWxyZXhh"))[2:17]
+    checker2 = str(pybase64.b64decode("QHRpcmV4Z3VnZWw="))[2:13]
     try:
         await bot(GetSec(gocheck))
     except BaseException:
@@ -452,17 +456,18 @@ with bot:
         bot.loop.run_until_complete(checking())
     except BaseException:
         LOGS.info(
-            "Join Support Group @justvenzzz and Channel @venzproject to see the updates of userbot"
+            "Join Support Group @justvenzzz and Channel @venzproject o see the updates of userbot"
             "Don't Leave")
         quit(1)
 
 
 async def update_restart_msg(chat_id, msg_id):
+    DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
         f"**Venz-Userbot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
-        f"**User:** {owner}"
+        f"**User:** {DEFAULTUSER}"
     )
     await bot.edit_message(chat_id, msg_id, message)
     return True
@@ -482,7 +487,6 @@ try:
     delgvar("restartstatus")
 except AttributeError:
     pass
-
 
 if BOT_TOKEN is not None:
     tgbot = TelegramClient(
@@ -529,9 +533,7 @@ def paginate_help(page_number, loaded_modules, prefix):
                 custom.Button.inline(
                     "⬅️", data="{}_prev({})".format(prefix, modulo_page)
                 ),
-                custom.Button.inline(
-                    "ʙᴀᴄᴋ", data="{}_close({})".format(prefix, modulo_page)
-                ),
+                custom.Button.inline("Tutup", b"close"),
                 custom.Button.inline(
                     "➡️", data="{}_next({})".format(prefix, modulo_page)
                 ),
@@ -560,26 +562,29 @@ with bot:
         user = bot.get_me()
         uid = user.id
         owner = user.first_name
-        asst = tgbot.get_me()
-        botusername = asst.username
         logo = ALIVE_LOGO
         venzlogo = INLINE_PIC
-        cmd = CMD_HANDLER
         tgbotusername = BOT_USERNAME
         BTN_URL_REGEX = re.compile(
             r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)"
         )
 
-        main_help_button = [
-            [
-                Button.inline("ᴍᴏᴅᴜʟᴇs 🛂", data="reopen"),
-                Button.inline("ᴠᴄ ᴍᴇɴᴜ 📲", data="venz_inline"),
-            ],
-            [
-                Button.url("sᴇᴛᴛɪɴɢs ⚙️", f"t.me/{botusername}"),
-            ],
-            [Button.inline("ʙᴀᴄᴋ", data="close")],
-        ]
+        @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(rb"reopen")))
+        async def on_plug_in_callback_query_handler(event):
+            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
+                current_page_number = int(looters)
+                buttons = paginate_help(
+                    current_page_number, dugmeler, "helpme")
+                text = f"**🔥 Venz-Userbot Inline Menu 🔥**\n\n⌬ **Owner :** [{user.first_name}](tg://user?id={user.id})\n⌬ **Jumlah** `{len(dugmeler)}` Modules"
+                await event.edit(
+                    text,
+                    file=venzlogo,
+                    buttons=buttons,
+                    link_preview=False,
+                )
+            else:
+                reply_pop_up_alert = f"Lu ga di izinkan gblk, ini userbot milik {owner}"
+                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.NewMessage(incoming=True,
                   func=lambda e: e.is_private))
@@ -652,25 +657,6 @@ with bot:
                                 f"**ERROR:** Saat menyimpan detail pesan di database\n`{e}`",
                             )
 
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"reopen")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
-                buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**✨ 𝐕𝐄𝐍𝐙 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐈𝐍𝐋𝐈𝐍𝐄 𝐌𝐄𝐍𝐔 ✨**\n\n✣ **𝐎𝐖𝐍𝐄𝐑** [{user.first_name}](tg://user?id={user.id})\n✣ **𝐉𝐔𝐌𝐋𝐀𝐇** `{len(dugmeler)}` **𝐌𝐎𝐃𝐔𝐋𝐄𝐒**"
-                await event.edit(
-                    text,
-                    file=venzlogo,
-                    buttons=buttons,
-                    link_preview=False,
-                )
-            else:
-                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
         @tgbot.on(events.InlineQuery)
         async def inline_handler(event):
             builder = event.builder
@@ -681,25 +667,25 @@ with bot:
                 result = await event.builder.photo(
                     file=venzlogo,
                     link_preview=False,
-                    text=f"**✨ 𝐕𝐄𝐍𝐙 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐈𝐍𝐋𝐈𝐍𝐄 𝐌𝐄𝐍𝐔 ✨**\n\n✣ **𝐎𝐖𝐍𝐄𝐑 :** [{user.first_name}](tg://user?id={user.id})\n✣ **𝐉𝐔𝐌𝐋𝐀𝐇** `{len(dugmeler)}` **𝐌𝐎𝐃𝐔𝐋𝐄𝐒**",
-                    buttons=main_help_button,
+                    text=f"**⚡ Venz Userbot Inline Menu⚡**\n\n⌬ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n⌬ **ᴊᴜᴍʟᴀʜ** `{len(dugmeler)}` **Modules**",
+                    buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
                     description="Repository Venz - Userbot",
-                    url="https://t.me/justvenzzz",
+                    url="https://t.me/venzproject",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text="**𝐕𝐄𝐍𝐙 𝐔𝐒𝐄𝐑𝐁𝐎𝐓**\n➖➖➖➖➖➖➖➖➖➖\n✣ **𝐎𝐖𝐍𝐄𝐑 𝐑𝐄𝐏𝐎 :** [𝐕𝐄𝐍𝐙-𝐄𝐗](https://t.me/moonscrsh)\n✣ **𝐒𝐔𝐏𝐏𝐎𝐑𝐓 :** @justvenzzz\n✣ **𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐘 :** [𝐕𝐄𝐍𝐙-𝐔𝐒𝐄𝐑𝐁𝐎𝐓](https://github.com/eldy020502/Venz-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Venz - Userbot**\n≫≫≫≫≫≫≫≫≫≫\n⌬ **ᴏᴡɴᴇʀ ʀᴇᴘᴏ :** [venz-ᴇx](https://t.me/moonscrsh)\n⌬ **sᴜᴘᴘᴏʀᴛ :** @justvenzzz\n⌬ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Venz-Userbot](https://github.com/eldy020502/Venz-Userbot)\n≫≫≫≫≫≫≫≫≫≫",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
-                                "https://t.me/justvenzzz"),
+                                "https://t.me/Justvenzzz"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
                                 "https://github.com/eldy020502/Venz-Userbot"),
@@ -707,6 +693,7 @@ with bot:
                     ],
                     link_preview=False,
                 )
+
             elif query.startswith("Inline buttons"):
                 markdown_note = query[14:]
                 prev = 0
@@ -741,15 +728,15 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ 𝐕𝐄𝐍𝐙-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 ✨",
-                    description="Venz - Userbot | Telethon",
+                    title="⚡ venz userbot ⚡",
+                    description="Venz Userbot | Telethon",
                     url="https://t.me/venzproject",
                     thumb=InputWebDocument(
-                        INLINE_PIC,
+                        ALIVE_LOGO,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**𝐕𝐄𝐍𝐙-𝐔𝐒𝐄𝐑𝐁𝐎𝐓**\n➖➖➖➖➖➖➖➖➖➖\n✣ **𝐎𝐖𝐍𝐄𝐑 :** [{user.first_name}](tg://user?id={user.id})\n✣ **𝐀𝐒𝐒𝐈𝐒𝐓𝐀𝐍𝐓:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**𝐔𝐏𝐃𝐀𝐓𝐄𝐒:** @venzproject\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**VenzUserbot**\n➖➖➖➖➖➖➖➖➖➖\n⌬ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n⌬ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs:** @venzproject\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
@@ -784,143 +771,17 @@ with bot:
                 )
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"helpme_close\((.+?)\)")
-            )
-        )
+        @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Venz-Userbot
-                # https://t.me/TelethonChat/115200
+            if event.query.user_id == uid or event.query.user_id in DEVS and SUDO_USERS:
+                openlagi = custom.Button.inline(
+                    "• Re-Open Menu •", data="reopen")
                 await event.edit(
-                    file=venzlogo,
-                    link_preview=True,
-                    buttons=main_help_button)
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"gcback")
-            )
-        )
-        async def gback_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Venz-Userbot
-                # https://t.me/TelethonChat/115200
-                text = (
-                    f"**✨ 𝐕𝐄𝐍𝐙 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐈𝐍𝐋𝐈𝐍𝐄 𝐌𝐄𝐍𝐔 ✨**\n\n✣ **𝐎𝐖𝐍𝐄𝐑 :** [{user.first_name}](tg://user?id={user.id})\n✣ **𝐉𝐔𝐌𝐋𝐀𝐇** `{len(dugmeler)}` **𝐌𝐎𝐃𝐔𝐋𝐄𝐒**")
-                await event.edit(
-                    text,
-                    file=venzlogo,
-                    link_preview=True,
-                    buttons=main_help_button)
-
-        @tgbot.on(events.CallbackQuery(data=b"venz_inline"))
-        async def about(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
-                await event.edit(f"""
-Voice chat group menu untuk {owner}
-""",
-                                 buttons=[
-                                     [
-                                         Button.inline("ᴠᴄ ᴘʟᴜɢɪɴ ⚙️",
-                                                       data="vcplugin"),
-                                         Button.inline("ᴠᴄ ᴛᴏᴏʟs ⚙️",
-                                                       data="vctools")],
-                                     [custom.Button.inline(
-                                         "ʙᴀᴄᴋ", data="gcback")],
-                                 ]
-                                 )
+                    "⚡ **ʜᴇʟᴘ ᴍᴏᴅᴇ ʙᴜᴛᴛᴏɴ ᴅɪᴛᴜᴛᴜᴘ!** ⚡", buttons=openlagi
+                )
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"vcplugin")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
-                text = (
-                    f"""
-✘ **Commands available in vcplugin** ✘
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}play` <Judul Lagu/Link YT>
-  ↳ : Untuk Memutar Lagu di voice chat group dengan akun kamu
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}vplay` <Judul Video/Link YT>
-  ↳ : Untuk Memutar Video di voice chat group dengan akun kamu
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}end`
-  ↳ : Untuk Memberhentikan video/lagu yang sedang putar di voice chat group
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}skip`
-  ↳ : Untuk Melewati video/lagu yang sedang di putar
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}pause`
-  ↳ : Untuk memberhentikan video/lagu yang sedang diputar
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}resume`
-  ↳ : Untuk melanjutkan pemutaran video/lagu yang sedang diputar
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}volume` 1-200
-  ↳ : Untuk mengubah volume (Membutuhkan Hak admin)
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}playlist`
-  ↳ : Untuk menampilkan daftar putar Lagu/Video
-""")
-                await event.edit(
-                    text,
-                    file=venzlogo,
-                    link_preview=True,
-                    buttons=[Button.inline("ʙᴀᴄᴋ", data="venz_inline")])
-            else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"vctools")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
-                text = (
-                    f"""
-✘ **Commands available in vctools** ✘
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}startvc`
-  ↳ : Untuk Memulai voice chat group
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}stopvc`
-  ↳ : Untuk Memberhentikan voice chat group
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}vctitle` <title vcg>
-  ↳ : Untuk Mengubah title/judul voice chat group
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}vcinvite`
-  ↳ : Mengundang Member group ke voice chat group
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}joinvc`
-  ↳ : Melakukan Fake voice chat group
-
-  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : `{cmd}leavevc`
-  ↳ : Memberhentikan Fake voice chat group
-""")
-                await event.edit(
-                    text,
-                    file=venzlogo,
-                    link_preview=True,
-                    buttons=[Button.inline("ʙᴀᴄᴋ", data="venz_inline")])
-            else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @tgbot.on(events.CallbackQuery(data=b"close"))
-        async def close(event):
-            buttons = [
-                (custom.Button.inline("ᴍᴀɪɴ ᴍᴇɴᴜ", data="gcback"),),
-            ]
-            await event.edit("**ᴍᴇɴᴜ ᴅɪᴛᴜᴛᴜᴘ!**", file=venzlogo, buttons=buttons)
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(
@@ -954,6 +815,7 @@ Voice chat group menu untuk {owner}
                         + modul_name
                         + " "
                     )
+
                 else:
                     help_string = (str(CMD_HELP[modul_name]).replace(
                         "`", "").replace("**", ""))
@@ -966,9 +828,8 @@ Voice chat group menu untuk {owner}
                     )
                 )
                 await event.edit(
-                    reply_pop_up_alert, buttons=[Button.inline("ʙᴀᴄᴋ", data="reopen")]
+                    reply_pop_up_alert, buttons=[Button.inline("Back", data="reopen")]
                 )
-
             else:
                 reply_pop_up_alert = f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
