@@ -813,7 +813,7 @@ with bot:
                     link_preview=True,
                     buttons=main_help_button)
 
-        @tgbot.on(events.CallbackQuery(data=b"Venz_inline"))
+        @tgbot.on(events.CallbackQuery(data=b"venz_inline"))
         async def about(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 await event.edit(f"""
