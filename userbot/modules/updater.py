@@ -17,7 +17,9 @@ from userbot import (
     HEROKU_API_KEY,
     HEROKU_APP_NAME,
     UPSTREAM_REPO_URL,
-    UPSTREAM_REPO_BRANCH)
+    UPSTREAM_REPO_BRANCH
+)
+from userbot.events import register
 from userbot.utils import edit_or_reply, edit_delete, venz_cmd
 
 requirements_path = path.join(
@@ -58,7 +60,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await edit_or_reply(event,
                                 "`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `"
-                                " untuk dapat deploy perubahan terbaru dari ✨venz-userbot✨.`"
+                                " untuk dapat deploy perubahan terbaru dari 🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ🔥.`"
                                 )
             repo.__del__()
             return
@@ -68,11 +70,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await edit_delete(event,
-                              f"{txt}\n`Kredensial Heroku tidak valid untuk deploy venz-Project dyno.`"
+                              f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Venz-Project dyno.`"
                               )
             return repo.__del__()
         await edit_or_reply(event,
-                            "`Heroku :` `Sedang MengUpdate`" "\n`Mohon Menunggu 5-7 Menit`"
+                            "`Heroku :` `Sedang MengUpdate`" "\n`Mohon Menunggu 5-10 Menit`"
                             )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -96,7 +98,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                               )
         else:
             await edit_delete(event,
-                              "`Venz-Userbot Berhasil DiUpdate🛃,Restart Tunggu Sebentar`"
+                              "`Venz-Userbot Berhasil DiUpdate✅,Restart Tunggu Sebentar`"
                               )
 
         if BOTLOG:
@@ -117,9 +119,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    x = await edit_or_reply(event, "**✨venz-userbot✨** `Berhasil Di Update!`")
+    x = await edit_or_reply(event, "**🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ🔥** `Berhasil Di Update!`")
     await asyncio.sleep(1)
-    await x.edit("**✨venz-userbot✨** `Di Restart....`")
+    await x.edit("**🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ🔥** `Di Restart....`")
     await asyncio.sleep(1)
     await x.edit("`Mohon Menunggu Beberapa Detik.`")
     await asyncio.sleep(10)
@@ -127,7 +129,7 @@ async def update(event, repo, ups_rem, ac_br):
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#BOT \n" "**✨venz-userbot✨ Telah Di Perbarui.**"
+            BOTLOG_CHATID, "#BOT \n" "**🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ🔥 Telah Di Perbarui.**"
         )
         await asyncio.sleep(100)
         await x.delete()
@@ -139,8 +141,8 @@ async def update(event, repo, ups_rem, ac_br):
 
 
 @venz_cmd(pattern="update(?: |$)(now|deploy)?")
-@register(incoming=True, from_users=1971311438,
-          pattern=r"^\.cupdate(?: |$)(now|deploy)?")
+@register(incoming=True, from_users=1224143544,
+          pattern=r"^.cupdate(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
     xx = await edit_or_reply(event, "**Mengecek Pembaruan, Silakan Menunggu....**")
@@ -193,7 +195,7 @@ async def upstream(event):
 
     if changelog == "" and force_update is False:
         await xx.edit(
-            f"\n✨venz-userbot✨ Sudah Versi Terbaru || Tunggu Update Terbaru\n"
+            f"\n🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ🔥 Sudah Versi Terbaru || Tunggu Update Terbaru\n"
         )
         await asyncio.sleep(15)
         await xx.delete()
@@ -201,7 +203,7 @@ async def upstream(event):
 
     if conf is None and force_update is False:
         changelog_str = (
-            f"**Pembaruan Untuk ✨venz-userbot✨ :\n\n⚒️ Pembaruan Data :**\n`{changelog}`"
+            f"**Pembaruan Untuk 🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ🔥 :\n\n👨‍💻 Pembaruan Data :**\n`{changelog}`"
         )
         if len(changelog_str) > 4096:
             await xx.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
@@ -217,7 +219,7 @@ async def upstream(event):
         else:
             await xx.edit(changelog_str)
         return await event.respond(
-            f"**Perintah Untuk Update, Sebagai Berikut.**\n🔰 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`{cmd}update now` (Sementara)\n🔰 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`{cmd}update deploy` (Permanen)\n\n__Untuk Meng Update Fitur Terbaru Dari ✨venz-userbot✨.__"
+            f"**Perintah Untuk Update, Sebagai Berikut.**\n👨‍🚀 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`{cmd}update now` (Sementara)\n👨‍🚀 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`{cmd}update deploy` (Permanen)\n\n__Untuk Meng Update Fitur Terbaru Dari 🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ🔥.__"
         )
 
     if force_update:
@@ -225,12 +227,14 @@ async def upstream(event):
             "`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`"
         )
     else:
-        await xx.edit("` Proses Update ✨venz-userbot✨, Loading....1%`")
-        await xx.edit("` Proses Update ✨venz-userbot✨ Loading....20%`")
-        await xx.edit("` Proses Update ✨venz-userbot✨, Loading....35%`")
-        await xx.edit("` Proses Update ✨venz-userbot✨, Loading....77%`")
-        await xx.edit("` Proses Update ✨venz-userbot✨, Updating...90%`")
-        await xx.edit("` Proses Update ✨venz-userbot✨, Mohon Tunggu Sebentar....100%`")
+        await xx.edit("` Proses Update 🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ🔥, Loading....1%`")
+        await xx.edit("` Proses Update 🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ🔥 Loading....20%`")
+        await xx.edit("` Proses Update 🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ🔥, Loading....35%`")
+        await xx.edit("` Proses Update 🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ🔥, Loading....77%`")
+        await xx.edit("` Proses Update 🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏᴛ🔥, Updating...90%`")
+        await xx.edit(
+            "` Proses Update 🔥ᴠᴇɴᴢ-ᴜsᴇʀʙᴏт🔥, Mohon Tunggu Sebentar....100%`"
+        )
 
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
@@ -246,7 +250,7 @@ async def upstream(event):
 CMD_HELP.update(
     {
         "update": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}update`"
-        "\n• : Untuk Melihat Pembaruan Terbaru venz-Userbot."
+        "\n• : Untuk Melihat Pembaruan Terbaru Venz-Userbot."
         f"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}update now`"
         "\n• : Memperbarui Venz-Userbot."
         f"\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}update deploy`"
