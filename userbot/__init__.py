@@ -106,7 +106,6 @@ if CONFIG_CHECK:
 # DEVS
 DEVS = (
     1971311438,  # Venz
-    1224143544,  # Rexa
     1663258664,  # kyy
     1784606556,  # grey
     2046879193,  # Gatau
