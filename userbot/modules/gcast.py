@@ -26,6 +26,7 @@ GCAST_BLACKLIST = [
     -1001459812644,  # Disuruhrama
     -1001318051930,  # Gatau GC mana
     -1001538752127,  # AbingSupport
+    -1001683749664,  # Rexasupport
 
 ]
 
