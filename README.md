@@ -9,7 +9,7 @@
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/78d150a3ce9488dcaa7cf.jpg">
+  <img src="./resources/extras/goku.gif" width="5504 × 5504px"
 </p>
 
 
