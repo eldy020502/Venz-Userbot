@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./resources/extras/ubot.gif" width="50px"> Venz-Userbot <img src="./resources/extras/ubot.gif" width="50px">
+<h1 align="center"><img src="./resources/extras/ubot.gif" width="40px"> Venz-Userbot <img src="./resources/extras/ubot.gif" width="40px">
 
 <p align="center">
     <a href="https://github.com/eldy020502/Venz-Userbot/commits/Kyy-Userbot"><img src="https://img.shields.io/github/last-commit/eldy020502/Venz-Userbot?color=ff0000&logo=github&logoColor=ffffff&style=for-the-badge" /></a>
