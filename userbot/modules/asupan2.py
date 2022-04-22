@@ -35,15 +35,15 @@ async def _(event):
 async def _(event):
     try:
         onlyfansnya = [
-            onlyfans
-            async for onlyfans in event.client.iter_messages(
+            olyfans
+            async for olyfans in event.client.iter_messages(
                 "@Onlyvenzzz", filter=InputMessagesFilterPhotos
             )
         ]
         aing = await event.client.get_me()
         await event.client.send_file(
             event.chat_id,
-            file=random.choice(onlyfansnya),
+            file=random.choice(olyfansnya),
             caption=f"**ᴠɪᴅᴇᴏ ᴏɴʟʏꜰᴀɴꜱ ʙʏ** [{owner}](tg://user?id={aing.id})",
         )
         await event.delete()
