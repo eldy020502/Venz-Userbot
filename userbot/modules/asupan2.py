@@ -34,7 +34,7 @@ async def _(event):
 @venz_cmd(pattern="olyfans$")
 async def _(event):
     try:
-        onlyfansnya = [
+        olyfansnya = [
             olyfans
             async for olyfans in event.client.iter_messages(
                 "@onlyvenzzz", filter=InputMessagesFilterVideo
