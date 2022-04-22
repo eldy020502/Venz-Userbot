@@ -31,7 +31,7 @@ async def _(event):
         await event.edit("ᴠɪᴅᴇᴏ ʟᴏʟɪ ɴʏᴀ ɢᴀ ᴀᴅᴀ")
 
 
-@venz_cmd(pattern="onlyfans$")
+@venz_cmd(pattern="olyfans$")
 async def _(event):
     try:
         onlyfansnya = [
@@ -56,7 +56,7 @@ CMD_HELP.update(
         "asupan2": f"**Plugin : **pedo\
         \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}pedo\
         \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Mengirim video pedo secara random.\
-        \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}onlyfans\
+        \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}olyfans\
         \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Mengirim video onlyfans.\
 "
     }
