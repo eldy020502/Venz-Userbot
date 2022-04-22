@@ -28,7 +28,7 @@ async def _(event):
         )
         await event.delete()
     except Exception:
-        await event.edit(**fotonya ngga ada**)
+        await event.edit("**fotonya ngga ada**")
 
 
 @venz_cmd(pattern="wallwibu$")
