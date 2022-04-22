@@ -37,7 +37,7 @@ async def _(event):
         onlyfansnya = [
             olyfans
             async for olyfans in event.client.iter_messages(
-                "@onlyvenzzz", filter=InputMessagesFilterPhotos
+                "@onlyvenzzz", filter=InputMessagesFilterVideo
             )
         ]
         aing = await event.client.get_me()
@@ -48,7 +48,7 @@ async def _(event):
         )
         await event.delete()
     except Exception:
-        await event.edit("**Silahkan coba lagi.**")
+        await event.edit("ᴠɪᴅᴇᴏ ᴏɴʟʏꜰᴀɴꜱɴʏᴀ ɢᴀᴅᴀ")
 
 
 CMD_HELP.update(
