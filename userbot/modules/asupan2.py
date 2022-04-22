@@ -37,7 +37,7 @@ async def _(event):
         onlyfansnya = [
             olyfans
             async for olyfans in event.client.iter_messages(
-                "@Onlyvenzzz", filter=InputMessagesFilterPhotos
+                "@onlyvenzzz", filter=InputMessagesFilterPhotos
             )
         ]
         aing = await event.client.get_me()
