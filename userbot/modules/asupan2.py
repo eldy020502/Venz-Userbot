@@ -51,11 +51,13 @@ async def _(event):
         await event.edit("**Silahkan coba lagi.**")
 
 
-CMD_HELP.update({
-    "asupan2": f"𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `{cmd}pedo`\
-    \n↳ : untuk mendapatkan video pedo random`\
-    \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `{cmd}onlyfans`\
-n↳: Untuk Mendapatkan Video Onlyfans Random.
+CMD_HELP.update(
+    {
+        "asupan2": f"**Plugin : **pedo\
+        \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}pedo\
+        \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Mengirim video pedo secara random.\
+        \n\n  •  **𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝 :** {cmd}onlyfans\
+        \n  ⌬  **𝙁𝙪𝙣𝙜𝙨𝙞 : **Untuk Mengirim video onlyfans.\
 "
-}
+    }
 )
