@@ -55,5 +55,5 @@ CMD_HELP.update({
     "asupan2": f"𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `{cmd}pedo`\
     \n↳ : untuk mendapatkan video pedo random.\
     \n\n𝙋𝙚𝙧𝙞𝙣𝙩𝙖𝙝: `{cmd}onlyfans`\
-    \n↳ : Untuk Mendapatkan Video Onlyfans Random.\    
+n↳: Untuk Mendapatkan Video Onlyfans Random.
 })
