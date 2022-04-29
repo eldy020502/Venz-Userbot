@@ -17,7 +17,7 @@ async def _(event):
         ppwibunya = [
             ppwibu
             async for ppwibu in event.client.iter_messages(
-                "@venzanime", filter=InputMessagesFilterPhotos
+                "@venzanimeprofile", filter=InputMessagesFilterPhotos
             )
         ]
         aing = await event.client.get_me()
@@ -37,7 +37,7 @@ async def _(event):
         wallwibunya = [
             wallwibu
             async for wallwibu in event.client.iter_messages(
-                "@wallpapervenz", filter=InputMessagesFilterPhotos
+                "@venzwallpaper", filter=InputMessagesFilterPhotos
             )
         ]
         aing = await event.client.get_me()
