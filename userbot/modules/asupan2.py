@@ -28,7 +28,7 @@ async def _(event):
         )
         await event.delete()
     except Exception:
-        await event.edit("ᴠɪᴅᴇᴏ ᴏɴʟʏꜰᴀɴꜱɴʏᴀ ɢᴀᴅᴀ")
+        await event.edit("ᴠɪᴅᴇᴏ ᴘᴇᴋᴏʙɴʏᴀ ɢᴀᴅᴀ")
 
 
 CMD_HELP.update(
