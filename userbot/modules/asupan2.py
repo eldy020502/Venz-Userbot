@@ -17,7 +17,7 @@ async def _(event):
         pekobnya = [
             pekob
             async for pekob in event.client.iter_messages(
-                "https://t.me/+skTTN1wh0ygyMzFl", filter=InputMessagesFilterVideo
+                "@asupanvenz", filter=InputMessagesFilterVideo
             )
         ]
         aing = await event.client.get_me()
