@@ -117,6 +117,7 @@ DEVS = (
     1337194042,  # abin
     1821140802,  # HIRO
     1337194042,  # ABING
+    1863783304,  # Zezan
 )
 # Blacklist User for use Venz-Userbot
 while 0 < 6:
